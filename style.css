@@ -1,0 +1,174 @@
+{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: radial-gradient(white, rgb(236,236,236));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Roboto;
+}
+
+nav {
+  width: 100%;
+  height: 85px;
+  background-color: white;
+  box-shadow: 2px 2px 4px rgb(0,0,0,0.11);
+}
+
+nav #logo {
+  height: 80px; 
+  margin-right: auto; 
+}
+
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li a {
+  font-family: Roboto;
+  color: #CDAA7D;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 28px;
+  display: block;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
+}
+
+nav ul li ul {
+  display: none; 
+  position: absolute;
+  background-color: #CDAA7D;
+  padding: 7px;
+  border-radius: 0px 0px 12px 12px;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li a {
+  color: white;
+  padding: 16px 20px;
+  border-radius: 10px;
+} 
+
+nav ul li ul li a:hover {
+  background-color: #ffffff;
+}
+
+.header-photo {
+  width: 100%;
+  max-height: 300px; 
+  overflow: hidden; 
+}
+
+.header-photo img {
+  width: 100%;
+  height: auto; 
+}
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-family: Arial;
+  font-size: 28px; 
+  max-width: 80%; 
+
+.header-text h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.header-text p {
+  font-size: 18px;
+}
+
+}
+nav ul li.cart-button {
+  margin-left: auto; 
+}
+
+footer {
+  font-family: Roboto;
+  padding: 20px; 
+  display: flex; 
+  justify-content: space-between; 
+}
+
+.footer-left {
+  flex: 1; 
+  color:#CDAA7D
+}
+
+.footer-right {
+  flex: 1; 
+  text-align: right; 
+}
+
+
+.footer-right ul {
+  list-style: none; 
+  padding: 0;
+}
+
+.footer-right ul li {
+  display: inline-block; 
+  margin-left: 20px; 
+}
+
+.footer-right ul li:first-child {
+  margin-left: 0; 
+}
+
+.footer-right ul li a {
+  color: #CDAA7D;
+  text-decoration: none; 
+}
+
+.footer-right ul li a:hover {
+  text-decoration: bold;
+}
+
+
+
+
+.container-1 {
+  display: flex;
+}
+
+.text {
+  flex: 1; 
+  padding: 20px;
+}
+
+.image {
+  flex: 1; 
+  text-align: right;
+}
+
+.image img {
+  max-height: 100%;
+  max-width: 100%; 
+}
