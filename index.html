@@ -1,57 +1,91 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="de">
-	<head> 
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Edelsteine">
-		<meta name="keywords" content="Edelsteine, Schmuck, Selbsttest">
-		<link rel="stylesheet" href="style.css"> 
-		<script src="script.js"></script>
-		<title>Edelsteinfreu(n)de</title>
-	</head>
-<body>
-  <nav>
-		<img src="/img/logo.png" alt="Logo" id="logo">
-    <ul>
-      <li><a href="#">Geschichte</a></li>
-      <li>
-        <a href="#">Selbsttest</a>
-        <ul> 
-          <li><a href="#">Schmuck-Konfigurator</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Kontakt</a></li>
-	  <li class="cart-button"><a href="#">Warenkorb</a></li> 
-    </ul>
-  </nav>
-  
-   <div class="header-photo">
-    <img src="/img/header1.jpg" alt="Edelsteinfreu(n)de Headerbild">
-	 <div class="header-text">
-    <h1>Herzlich Willkommen!</h1>
-    <p>Wie schön, dass du den Weg in die Welt der Edelsteine gefunden hast. 
-		Lasse dich inspirieren.</p>
-  </div>
-  
-	<div class="container-1">
-    <div class="text">
-      <h2>Geschichte der Edelsteine</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor nulla nec eros tincidunt, vitae tincidunt arcu varius. Fusce maximus id nisi in feugiat. Ut vel odio risus.</p>
-    </div>
-    <div class="image">
-      <img src="image.jpg" alt="Edelsteinbild">
-    </div>
-  </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <title>Finde deinen persönlichen Edelstein!</title>
+</head>
 
-<footer>
-  <div class="footer-left">
-    <p>&copy; 2024 Edelsteinfreu(n)de</p>
-  </div>
-  <div class="footer-right">
-    <ul>
-      <li><a href="#">Datenschutz</a></li>
-      <li><a href="#">Impressum</a></li>
-    </ul>
-  </div>
-</footer>
+<body>
+    <div class="'container">
+        <div id="question-container" class="hide">
+            <div id="question">Welches Sternzeichen bist du?</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Widder</button>
+                <button class="btn">Stier</button>
+                <button class="btn">Zwillinge</button>
+                <button class="btn">Krebs</button>
+                <button class="btn">Löwe</button>
+                <button class="btn">Jungfrau</button>
+                <button class="btn">Waage</button>
+                <button class="btn">Skorpion</button>
+                <button class="btn">Schütze</button>
+                <button class="btn">Steinbock</button>
+                <button class="btn">Wassermann</button>
+                <button class="btn">Fische</button>
+            </div>
+
+            <div id="question">Wie würdest du deinen Charakter beschreiben?</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Abenteuerlustig und spontan</button>
+                <button class="btn">Bodenständig und zuverlässig</button>
+                <button class="btn">Kommunikativ und vielseitig interessiert</button>
+            </div>
+
+            <div id="question">Welche Farbe spricht dich am meisten an?</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Rot</button>
+                <button class="btn">Grün</button>
+                <button class="btn">Blau</button>
+                <button class="btn">Violett</button>
+                <button class="btn">Gelb</button>
+            </div>
+
+            <div id="question">Welche Eigenschaft ist dir am wichtigsten?</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Mut</button>
+                <button class="btn">Stabilität</button>
+                <button class="btn">Intellekt</button>
+            </div>
+
+            <div id="question">Welche Aktivität macht du am liebsten in deiner Freizeit?</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Wandern in den Bergen</button>
+                <button class="btn">Gartenarbeit</button>
+                <button class="btn">Lesen</button>
+            </div>
+
+            <div id="question">Welche Landschaft gefällt dir am besten?</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Meeresküste</button>
+                <button class="btn">Berglandschaften</button>
+                <button class="btn">Wälder</button>
+                <button class="btn">Wüsten</button>
+            </div>
+
+            <div id="question">Welche Jahreszeit du am liebsten?</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Frühling</button>
+                <button class="btn">Sommer</button>
+                <button class="btn">Herbst</button>
+                <button class="btn">Winter</button>
+            </div>
+
+            <div id="question">Welche Art von Musik hörst du am liebsten?</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Rock</button>
+                <button class="btn">Klassik</button>
+                <button class="btn">Pop</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>    
+    </div>
+</body>
 </html>
