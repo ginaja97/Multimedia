@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schmuckkonfigurator</title>
+<script type="text/javascript" src="Konfigurator.js"></script>
+<style>
+  /* Stile für bessere Darstellung */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  #steinVorschau {
+    max-width: 200px;
+    display: none;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+<h1>Schmuckkonfigurator</h1>
+<form id="konfiguratorForm">
+  <label for="produktTyp">Produkttyp:</label>
+  <select id="produktTyp" onchange="updateLängenOptionen()">
+    <option value="kette">Kette</option>
+    <option value="armband">Armband</option>
+  </select><br>
+
+  <label for="material">Material:</label>
+  <select id="material">
+    <option value="silber">Silber</option>
+    <option value="gold">Gold</option>
+  </select><br>
+
+  <div id="laengeOptionen">
+    <label for="laenge">Länge:</label>
+    <select id="laenge"></select><br>
+  </div>
+
+  <div id="steinOptionen">
+    <label for="stein">Edelstein:</label>
+    <select id="stein" onchange="updateSteinVorschau()">
+      <option value="aquamarin">Aquamarin</option>
+      <option value="smaragd">Smaragd</option>
+      <option value="topas">Topas</option>
+      <option value="mondstein">Mondstein</option>
+      <option value="diamant">Diamant</option>
+      <option value="saphir">Saphir</option>
+      <option value="opal">Opal</option>
+      <option value="peridot">Peridot</option>
+      <option value="tansanit">Tansanit</option>
+      <option value="rubin">Rubin</option>
+      <option value="granat">Granat</option>
+      <option value="amethyst">Amethyst</option>
+    </select><br>
+    <img id="steinVorschau" src="" alt="Edelstein Vorschau">
+  </div>
+
+  <button type="button" onclick="berechnePreis()">Preis berechnen</button>
+  <button type="button" onclick="zumWarenkorbHinzufügen()">Zum Warenkorb hinzufügen</button>
+</form>
+
+<p id="preisAnzeige"></p>
+</body>
+</html>
