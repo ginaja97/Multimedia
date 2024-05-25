@@ -1,0 +1,703 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+			margin: 0;
+		}
+		.BOX {
+			display: flex;															/* Flexbox-Layout */
+			flex-direction: column;													/* Anordnung der Items (in Zeilen) */
+			gap: 10px;																/* Abstand zwischen den Items */
+			padding: 10px;															/* Abstand zwischen Items und Rand */
+			height: auto;															/* Größe der Website (relative Höhe abhängig vom Inhalt) */
+			width: auto;															/* Größe der Website (absolute Breite) */
+			background-color: #ececec;
+			font-family: arial;
+			font-size: 20px;
+			color: white;
+		}
+		.NAV {
+			position: relative;
+			height: 100px;
+			width: 100%;
+			font-size: 2rem;
+			background-color: white;
+			box-shadow: 2px 2px 4px rgb(0,0,0,0.11);
+			z-index: 1;
+		}
+		.NAV ul {
+			float: right;
+			position: relative;
+		}
+		.NAV ul li {
+		  float: left;
+		  list-style: none;
+		  position: relative;
+
+		}
+		.NAV ul li a {
+		  font-family: Roboto;
+		  color: #CDAA7D;
+		  font-size: 18px;
+		  text-decoration: none;
+		  padding: 25px;
+		
+		}
+		.NAV ul li a:hover {
+  			font-weight: bold;
+		}
+
+		.NAV ul li ul {
+		  display: none; 
+		  position: absolute;
+		  background-color: #CDAA7D;
+			padding: 7px;
+		  border-radius: 0px 0px 12px 12px;
+		}
+
+		.NAV ul li:hover ul {
+  		  display: block;
+		}
+
+		.NAV ul li ul li a {
+		  color: white;
+		  padding: 16px 20px;
+		  border-radius: 10px;
+		} 
+
+		.NAV ul li ul li a:hover {
+		  color: #ffffff;
+		}
+
+		.NAV #warenkorb {
+	 	  height: 50px;
+		  padding-bottom: 40px;
+          margin-right: 40px;
+		  margin-left: 20px;
+		}
+
+		.LOGO {
+  			height: 80px; 
+  			margin-right: auto;
+			margin-top: 5px;
+		}
+
+		.HEADER {
+			position: relative;
+  			text-align: center;
+  			color: white;
+			height: auto;                                                       /* Größe (absolute Höhe) */
+			width: 100%;															/* Größe (relative Breite abhängig vom Eltern-Element) */
+			background-color: #A2D093;
+		}
+		
+		.TITELBILD {
+  			width: 100%;
+  			max-height: auto;
+		}
+
+		.HEADER p {
+			margin-top: 20px;
+			margin-bottom: 40px;
+		}
+		.HEADER h1 {
+			margin: 20px;
+		}
+
+		.BANNER {
+			position: relative;
+			height: 100px;															
+			background-color: white;
+		}
+		.BANNER h2 {
+			padding-top: 10px;
+			padding-left: 20px;
+			color: black;
+		}
+		
+		button {
+			position: absolute;
+			top: 30px;
+			left: 90%;
+			width: auto;
+			background-color: #D5B895;
+			color: white;
+			border-width: 2px;
+			border-style: none;
+			padding: 10px;
+			box-shadow: 5px 5px 8px gray;
+			border-radius: 10px;
+			font-weight: bold;
+			font-size: 1rem;
+			font-family: arial;
+		}
+		button:hover {
+			background-color: #A2D093;
+			color: white;
+		}
+		button:active {
+			background-color: white;
+			color: black;
+		}
+
+		.SLIDER {
+			height: auto;															/* Größe (absolute Höhe) */
+			width: 100%;															/* Größe (relative Breite abhängig vom Eltern-Element) */
+			background-color: #FFFFFF;
+		}
+		.SLIDER p {
+			text-align: center;
+			color: black;
+		}
+		.SLIDER h2 {
+			padding-top: 20px;
+			text-align: center;
+			color: black;
+		}
+		.SLIDER * {
+		  box-sizing: border-box;
+		}
+
+		.SLIDER2 {
+			height: auto;														/* Größe (absolute Höhe) */
+			width: 100%;															/* Größe (relative Breite abhängig vom Eltern-Element) */
+			background-color: #A2D093;
+		}
+
+		.SLIDER2 p {
+			padding-top: 20px;
+			padding-right: 10ox;
+			padding-left: 10px;
+			text-align: center;
+			color: black;
+		}
+		.SLIDER2 h2 {
+			padding-top: 20px;
+			text-align: center;
+			color: black;
+		}
+		.SLIDER2 * {
+		  box-sizing: border-box;
+		}
+
+		.SLIDER3 {
+			height: auto;														/* Größe (absolute Höhe) */
+			width: 100%;															/* Größe (relative Breite abhängig vom Eltern-Element) */
+			background-color: white;
+		}
+
+		.SLIDER3 p {
+			padding-top: 20px;
+			text-align: center;
+			color: black;
+		}
+
+		.SLIDER3 h1 {
+			padding-top: 20px;
+			text-align: center;
+			color: black;
+		}
+
+		.SLIDER3 * {
+		  box-sizing: border-box;
+		}
+
+		.SLIDER3 column {
+		  float: left;
+		  width: 33.33%;
+		  padding-left: 50px;
+		  padding-right: 10px;
+		  padding-bottom: 40px;
+		  padding-top: 40px;
+		}
+		.SLIDER3 row::after {
+		  content: "";
+		  clear: both;
+		  display: table;
+		}	
+
+		.column {
+		  float: left;
+		  width: 25%;
+		  padding-left: 10px;
+		  padding-right: 10px;
+		  padding-bottom: 40px;
+		  padding-top: 40px;
+		}
+
+		/* Clearfix (clear floats) */
+		.row::after {
+		  content: "";
+		  clear: both;
+		  display: table;
+		}
+
+		.STECKBRIEF {
+			position: absolute;
+		  	top: 950px;
+		  	left: 80px;
+			padding: 30px;
+			border-radius: 30px 30px 0 30px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			text-align: center;
+			color: black;
+			visibility: hidden;
+		}
+
+		.SICHTBAR {
+			visibility: visible;
+		}
+		
+		.MAIN {
+			display: flex;															/* Flexbox-Layout */
+			flex-direction: row;													/* Anordnung der Items (in Zeilen) */
+			justify-content: space-between;											/* Ausrichtung der Items (X-Achse) */
+			align-items: stretch;													/* Ausrichtung der Items (Y-Achse) ... */
+			height: 400px;															/* ... hier nur für Testzwecke (default) */
+			width: 100%;
+		}
+
+		.ARTICLE {
+			height: auto;
+			width: 70%;
+			background-color: white;
+			padding-left: 20px;
+		}
+		.ARTICLE p {
+			color: black;
+		}
+
+		.ARTICLE h1 {
+			color: black;
+		}
+
+		.INFORMATION {
+			height: auto;
+			width: 100%;
+			background-color: white;
+			padding-left: 20px;
+		}
+		.INFORMATION p {
+			color: black;
+			text-align: center;
+		}
+
+		.INFORMATION h1 {
+			color: black;
+			text-align: center;
+		}
+		.INFORMATIONSBILD {
+			max-height: 100%;
+			max-width: 100%;
+			float: right;	
+		}
+
+		.ASIDE {
+			height: auto;
+			width: 50%;
+			background-color: white;
+		}
+		.SCHMUCKBILD {
+			max-height: 100%;
+			max-width: 100%;
+			float: right;	
+		}
+		.REZENSIONEN {
+			height: auto;															/* Größe (absolute Höhe) */
+			width: 100%;															/* Größe (relative Breite abhängig vom Eltern-Element) */
+			background-color: #A2D093;
+		}
+		
+		.REZENSIONEN p {
+			text-align: center;
+			color: black;
+		}
+		.REZENSIONEN * {
+		  box-sizing: border-box;
+		}
+
+		.FORMULAR input[type=text], select, textarea {
+		  width: 100%; /* Full width */
+		  padding: 12px; /* Some padding */ 
+		  border: 1px solid #ccc; /* Gray border */
+		  border-radius: 4px; /* Rounded borders */
+		  box-sizing: border-box; /* Make sure that padding and width stays in place */
+		  margin-top: 6px; /* Add a top margin */
+		  margin-bottom: 16px; /* Bottom margin */
+		  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+		}
+		.FORMULAR {
+			padding: 100px;
+			background-color: white;
+			color: black;
+		}
+		.FORMULAR input[type=submit] {
+		  background-color: #A2D093;
+		  color: black;
+		  padding: 12px 20px;
+		  border: none;
+		  border-radius: 4px;
+		  cursor: pointer;
+		}
+
+		.FORMULAR input[type=submit]:hover {
+		  background-color: #D5B895;
+		   color: black;
+		}
+
+		.FOOTER {
+			padding-left: 20px;
+			padding-right: 20px;
+			background-color: #FFFFFF;
+			font-family: Roboto;
+ 			display: flex;
+ 			justify-content: space-between; 
+		}
+		.FOOTER-LEFT {
+  			flex: 1; 
+  			color: #D5B895;
+		}
+
+		.FOOTER-RIGHT {
+  			flex: 1; 
+  			text-align: right; 
+		}
+
+
+		.FOOTER-RIGHT ul {
+  			list-style: none; 
+  			padding: 0;
+		}
+
+		.FOOTER-RIGHT ul li {
+  			display: inline-block; 
+  			margin-left: 20px; 
+		}
+
+		.FOOTER-RIGHT ul li:first-child {
+  			margin-left: 0; 
+		}
+
+		.FOOTER-RIGHT ul li a {
+ 			color: #D5B895;
+			text-decoration: none;
+		}
+
+		.FOOTER-RIGHT ul li a:hover {
+  			font-weight: bold;
+		}
+
+		.TEST {
+			height: auto;															/* Größe (absolute Höhe) */
+			width: 100%;															/* Größe (relative Breite abhängig vom Eltern-Element) */
+			background-color: #FFFFFF;
+			color: black;
+		}
+		.TEST h1 {
+			text-align: center;
+			color: black;
+		}
+		.TEST form {
+			padding-left: 40px;
+		}
+
+		.TEST p {
+			padding-left: 40px;
+		}
+
+		.TEST * {
+		  box-sizing: border-box;
+		}
+
+		.TESTBUTTON {
+			position: absolute;
+			top: auto;
+			left: 50%;
+			width: auto;
+			background-color: #D5B895;
+			color: white;
+			border-width: 2px;
+			border-style: none;
+			padding: 10px;
+			box-shadow: 5px 5px 8px gray;
+			border-radius: 10px;
+			font-weight: bold;
+			font-size: 1rem;
+			font-family: arial;
+		}
+		.TESTBUTTON button:hover {
+			background-color: #A2D093;
+			color: white;
+		}
+		.TESTBUTTON button:active {
+			background-color: white;
+			color: black;
+		}
+		
+		.IMPRESSUM p {
+			color: black;
+			text-align: left;
+		}
+		
+		.IMPRESSUM h1 {
+			color: black;
+			text-align: left;
+		}
+		
+		
+		
+		
+		
+		.WORLD-MAP {
+			position: relative;
+			 width: 100%;
+			 height: 100%;
+		} 
+		
+		.EDELSTEIN {
+			position: absolute;
+		}
+		
+		
+		#AQUAMARIN {
+			position: absolute; 
+			top: 420px;
+			left: 330px;
+			width: 80px; /* Neue Breite des Edelsteins */
+			height: auto; 
+			cursor: pointer;
+			transform: scale(1.0);
+			}
+			
+		#AQUAMARIN:hover {
+			transform: scale(1.5);
+			}
+
+		#aquamarin-popup {
+			top: 420px;
+			left: 330px;
+			}
+			
+		#SMARAGD {
+			position: absolute; 
+			top: 360px;
+			left: 210px;
+			width: 80px; /* Neue Breite des Edelsteins */
+			height: auto; 
+			cursor: pointer;
+			transform: scale(1.0);
+			}
+			
+		#SMARAGD:hover {
+			transform: scale(1.5);
+		}
+		
+		#smaragd-popup {
+			top: 360px;
+			left: 210px;
+			}
+			
+		#TOPAS {
+			position: absolute; 
+			top: 450px;
+			left: 350px;
+			width: 80px; 
+			height: auto; 
+			cursor: pointer;
+			transform: scale(1.0);
+			}
+		
+		#TOPAS:hover {
+			transform: scale(1.5);
+		}	
+
+		#topas-popup {
+			top: 450px;
+			left: 350px;
+			}
+		
+		#MONDSTEIN {
+			position: absolute; 
+			top: 330px;
+			left: 935px;
+			width: 80px; 
+			height: auto; 
+			cursor: pointer;
+			transform: scale(1.0);
+			}
+		
+		#MONDSTEIN:hover {
+			transform: scale(1.5);
+		}	
+
+		#mondstein-popup {
+			top: 330px;
+			left: 935px;
+			}
+		
+		#DIAMANT {
+			position: absolute; 
+			top: 75px;
+			left: 100px;
+			width: 80px; 
+			height: auto; 
+			cursor: pointer;
+			transform: scale(1.0);	
+	}
+		
+		#DIAMANT:hover {
+			transform: scale(1.5);
+		}	
+
+		#diamant-popup {
+			top: 75px;
+			left: 100px;
+		}
+		
+		#SAPHIR {
+			position: absolute; 
+			top: 290px;
+			left: 1010px;
+			width: 80px;
+			height: auto; 
+			cursor: pointer;
+			transform: scale(1.0);	
+	}
+		
+		#SAPHIR:hover {
+			transform: scale(1.5);
+		}	
+
+		#saphir-popup {
+			top: 290px;
+			left: 1010px;
+		}	
+		
+		#OPAL {
+			position: absolute; 
+			top: 490px;
+			left: 1100px;
+			width: 80px; 
+			height: auto; 
+			cursor: pointer;
+			transform: scale(1.0);	
+	}
+
+		#OPAL:hover {
+			transform: scale(1.5);
+		}	
+
+		#opal-popup {
+			top: 490px;
+			left: 1100px;
+		}	
+		
+		#PERIDOT {
+			position: absolute; 
+			top: 190px;
+			left: 1030px;
+			width: 80px; 
+			height: auto; 
+			cursor: pointer;
+			transform: scale(1.0);	
+	}
+
+		.#PERIDOT:hover {
+			transform: scale(1.5);
+		}	
+
+		#peridot-popup {
+			top: 190px;
+			left: 1030px;
+		}	
+		
+		#TANSANIT {
+			position: absolute; 
+			top: 400px;
+			left: 710px;
+			width: 80px; 
+			height: auto; 
+			cursor: pointer;
+			transform: scale(1.0);		
+		}
+
+		#TANSANIT:hover {
+			transform: scale(1.5);
+		}	
+
+		#tansanit-popup {
+			top: 400px;
+			left: 710px;
+		}	
+		
+		#RUBIN {
+			position: absolute; 
+			top: 260px;
+			left: 980px;
+			width: 80px; 
+			height: auto; 
+			cursor: pointer;
+			transform: scale(1.0);		
+		}
+
+		#RUBIN:hover {
+			transform: scale(1.5);
+		}	
+
+		#rubin-popup {
+			top: 260px;
+			left: 980px;
+		}
+		
+		#GRANAT {
+			position: absolute; 
+			top: 170px;
+			left: 140px;
+			width: 80px;
+			height: auto; 
+			cursor: pointer;
+			transform: scale(1.0);		
+		}
+		
+		#GRANAT:hover {
+			transform: scale(1.5);
+		}	
+
+		#granat-popup {
+			top: 170px;
+			left: 140px;
+		}
+		
+		#AMETHYST {
+			position: absolute; 
+			top: 550px;
+			left: 350px;
+			width: 80px; 
+			height: auto; 
+			cursor: pointer;
+			transform: scale(1.0);		
+		}
+		
+		#AMETHYST:hover {
+			transform: scale(1.5);
+		}	
+
+		#amethyst-popup {
+			top: 550px;
+			left: 350px;
+		}
+		
+		.POPUP-FENSTER {
+			display: none; /* Initial versteckt */
+			position: absolute;
+			top: 100px; /* Passe die Position nach Bedarf an */
+			left: 100px; /* Passe die Position nach Bedarf an */
+			background-color: white;
+			color: black;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 30px 30px 30px 30px;
+			box-shadow: 5px 5px 10px 0px gray;
+			z-index: 10;
+}
+
