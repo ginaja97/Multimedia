@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DeinEdelstein-Schmuckkonfigurator</title>
+<script type="text/javascript" src="Konfigurator.js"></script>
+<link rel="stylesheet" href="styles.css"> 
+<style>
+  /* Stile für bessere Darstellung */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  #steinVorschau {
+    max-width: 200px;
+    display: none;
+    margin-top: 10px;
+  }
+  button {
+	position: absolute;
+	top: 550px;
+	left: 85%;
+	width: auto;
+	background-color: #D5B895;
+	color: white;
+	border-width: 2px;
+	border-style: none;
+	padding: 10px;
+	box-shadow: 5px 5px 8px gray;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 1rem;
+	font-family: arial;
+	}
+	
+button:hover {
+	background-color: #A2D093;
+	color: white;
+	}
+button:active {
+	background-color: white;
+	color: black;
+		}
+.BUTTON1 {
+	position: static;
+	width: auto;
+	background-color: #D5B895;
+	color: white;
+	border-width: 2px;
+	border-style: none;
+	padding: 10px;
+	box-shadow: 5px 5px 8px gray;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 1rem;
+	font-family: arial;
+	}
+</style>
+</head>
+<body>
+<div class='BOX'>		
+<div class='NAV'>
+			<a href="index.html"><img class="LOGO" src="images/Logo_DeinEdelstein_SW.png" alt="Logo"></a>
+			 <ul>
+      			<li>
+					<a href="DeinEdelstein_Geschichte.html">Geschichte</a>
+      			</li>
+      			<li>
+					<a href="DeinEdelstein_Angebote.html">Unser Angebot</a>
+        			<ul> 
+          				<li><a href="Quiz.html">Selbsttest</a></li>
+						<li><a href="Konfigurator.html">Konfigurator</a></li>
+        			</ul>
+      			</li>
+				<li><a href="DeinEdelstein_Ueberuns.html">Über uns</a></li>
+      			<li><a href="DeinEdelstein_Kontakt.html">Kontakt</a></li>
+	  			<li class="cart-button"><img src="images/Icon_Warenkorb.png" href="#" alt="warenkorb" id="warenkorb"></li>
+    		</ul>
+		</div>
+	<div class='HEADER'>
+			<img class="TITELBILD" src="images/headerbild1.jpg" alt="Edelsteinfreu(n)de Headerbild">
+		</div>
+<div class='TEST'>	
+<h1>Schmuckkonfigurator</h1>
+<form id="konfiguratorForm">
+  <label for="produktTyp">Produkttyp:</label>
+  <select id="produktTyp" onchange="updateLängenOptionen()">
+    <option value="kette">Kette</option>
+    <option value="armband">Armband</option>
+  </select><br>
+
+  <label for="material">Material:</label>
+  <select id="material">
+    <option value="silber">Silber</option>
+    <option value="gold">Gold</option>
+  </select><br>
+
+  <div id="laengeOptionen">
+    <label for="laenge">Länge:</label>
+    <select id="laenge"></select><br>
+  </div>
+
+  <div id="steinOptionen">
+    <label for="stein">Edelstein:</label>
+    <select id="stein" onchange="updateSteinVorschau()">
+      <option value="aquamarin">Aquamarin</option>
+      <option value="smaragd">Smaragd</option>
+      <option value="topas">Topas</option>
+      <option value="mondstein">Mondstein</option>
+      <option value="diamant">Diamant</option>
+      <option value="saphir">Saphir</option>
+      <option value="opal">Opal</option>
+      <option value="peridot">Peridot</option>
+      <option value="tansanit">Tansanit</option>
+      <option value="rubin">Rubin</option>
+      <option value="granat">Granat</option>
+      <option value="amethyst">Amethyst</option>
+    </select><br>
+    <img id="steinVorschau" src="" alt="Edelstein Vorschau">
+  </div>
+  <br>
+	<br>
+  <button class="BUTTON1" type="button" onclick="berechnePreis()">Preis berechnen</button>
+  <button type="button" onclick="zumWarenkorbHinzufügen()">Zum Warenkorb hinzufügen</button>
+</form>
+
+<p id="preisAnzeige"></p>
+	<br>
+	<br>
+	</div>
+	<div class='FOOTER'>
+
+  <div class="FOOTER-LEFT">
+    <p>&copy; 2024 DeinEdelstein</p>
+  </div>
+  <div class="FOOTER-RIGHT">
+    <ul>
+      <li><a href="#">Datenschutz</a></li>
+      <li><a href="#">Impressum</a></li>
+    </ul>
+  </div>
+	</div>
+	</div>
+</body>
+</html>
