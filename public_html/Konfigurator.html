@@ -89,13 +89,13 @@ button:active {
 <h1>Schmuckkonfigurator</h1>
 <form id="konfiguratorForm">
   <label for="produktTyp">Produkttyp:</label>
-  <select id="produktTyp" onchange="updateLängenOptionen()">
+  <select id="produktTyp" onchange="updateLängenOptionen(); updateFreistellerBild();">
     <option value="kette">Kette</option>
     <option value="armband">Armband</option>
   </select><br>
 
   <label for="material">Material:</label>
-  <select id="material">
+  <select id="material" onchange="updateFreistellerBild()">
     <option value="silber">Silber</option>
     <option value="gold">Gold</option>
   </select><br>
@@ -121,8 +121,13 @@ button:active {
       <option value="granat">Granat</option>
       <option value="amethyst">Amethyst</option>
     </select><br>
-    <img id="steinVorschau" src="" alt="Edelstein Vorschau">
   </div>
+</form>
+
+<div id="schmuckVorschauContainer">
+  <img id="freistellerBild" src="images/kette-silber.png" alt="Schmuckstück">
+  <img id="edelsteinBild" src="" alt="Edelstein">
+</div>
   <br>
 	<br>
   <button class="BUTTON1" type="button" onclick="berechnePreis()">Preis berechnen</button>
