@@ -332,7 +332,7 @@ body {
 		  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 		}
 		.FORMULAR {
-			padding: 100px;
+			padding: 80px;
 			background-color: white;
 			color: black;
 		}
