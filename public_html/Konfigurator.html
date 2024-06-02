@@ -15,7 +15,7 @@
   label {
     display: block;
     margin-bottom: 10px;
-	color: black;
+    color: black;
   }
   #steinVorschau {
     max-width: 200px;
@@ -23,116 +23,120 @@
     margin-top: 10px;
   }
   button {
-	position: absolute;
-	left: 83%;
-	top: 1025px;
-	width: auto;
-	background-color: #D5B895;
-	color: white;
-	border-width: 2px;
-	border-style: none;
-	padding: 10px;
-	box-shadow: 5px 5px 8px gray;
-	border-radius: 10px;
-	font-weight: bold;
-	font-size: 1rem;
-	font-family: arial;
-	}
-	
-button:hover {
-	background-color: #A2D093;
-	color: white;
-	}
-button:active {
-	background-color: white;
-	color: black;
-		}
-.BUTTON1 {
-	position: static;
-	width: auto;
-	background-color: #D5B895;
-	color: white;
-	border-width: 2px;
-	border-style: none;
-	padding: 10px;
-	box-shadow: 5px 5px 8px gray;
-	border-radius: 10px;
-	font-weight: bold;
-	font-size: 1rem;
-	font-family: arial;
-	}
-	
-	.SLIDER4 {
-			height: auto;														/* Größe (absolute Höhe) */
-			width: 100%;															/* Größe (relative Breite abhängig vom Eltern-Element) */
-			background-color: white;
-		}
-
-		.SLIDER4 p {
-			padding-top: 20px;
-			text-align: center;
-			color: black;
-		}
-
-		.SLIDER4 h1 {
-			padding-top: 20px;
-			text-align: center;
-			color: black;
-		}
-
-		.SLIDER4 * {
-		  box-sizing: border-box;
-		}
-
-		.SLIDER4 column {
-		  float: left;
-		  width: 50%;
-		  padding-left: 50px;
-		  padding-right: 10px;
-		  padding-bottom: 40px;
-		  padding-top: 40px;
-		}
-		.SLIDER row::after {
-		  content: "";
-		  clear: both;
-		  display: table;
-		}	
-
-		.column {
-		  float: left;
-		  width: 50%;
-		  padding-left: 20px;
-		  padding-right: 10px;
-		  padding-bottom: 40px;
-		  padding-top: 40px;
-		}
+    position: absolute;
+    left: 83%;
+    top: 1025px;
+    width: auto;
+    background-color: #D5B895;
+    color: white;
+    border-width: 2px;
+    border-style: none;
+    padding: 10px;
+    box-shadow: 5px 5px 8px gray;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: arial;
+  }
+  button:hover {
+    background-color: #A2D093;
+    color: white;
+  }
+  button:active {
+    background-color: white;
+    color: black;
+  }
+  #notificationBox {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #D5B895;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  .BUTTON1 {
+    position: static;
+    width: auto;
+    background-color: #D5B895;
+    color: white;
+    border-width: 2px;
+    border-style: none;
+    padding: 10px;
+    box-shadow: 5px 5px 8px gray;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: arial;
+  }
+  .SLIDER4 {
+    height: auto;                                                        /* Größe (absolute Höhe) */
+    width: 100%;                                                         /* Größe (relative Breite abhängig vom Eltern-Element) */
+    background-color: white;
+  }
+  .SLIDER4 p {
+    padding-top: 20px;
+    text-align: center;
+    color: black;
+  }
+  .SLIDER4 h1 {
+    padding-top: 20px;
+    text-align: center;
+    color: black;
+  }
+  .SLIDER4 * {
+    box-sizing: border-box;
+  }
+  .SLIDER4 column {
+    float: left;
+    width: 50%;
+    padding-left: 50px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+  .SLIDER row::after {
+    content: "";
+    clear: both;
+    display: table;
+  } 
+  .column {
+    float: left;
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
 </style>
 </head>
 <body>
-<div class='BOX'>		
+<div class='BOX'>    
 <div class='NAV'>
-			<a href="index.html"><img class="LOGO" src="images/Logo_DeinEdelstein_SW.png" alt="Logo"></a>
-			 <ul>
-      			<li>
-					<a href="DeinEdelstein_Geschichte.html">Geschichte</a>
-      			</li>
-      			<li>
-					<a href="DeinEdelstein_Angebote.html">Unser Angebot</a>
-        			<ul> 
-          				<li><a href="Quiz.html">Selbsttest</a></li>
-						<li><a href="Konfigurator.html">Konfigurator</a></li>
-        			</ul>
-      			</li>
-				<li><a href="DeinEdelstein_Ueberuns.html">Über uns</a></li>
-      			<li><a href="DeinEdelstein_Kontakt.html">Kontakt</a></li>
-	  			<li class="cart-button"><img src="images/Icon_Warenkorb.png" href="#" alt="warenkorb" id="warenkorb"></li>
-    		</ul>
-		</div>
-	<div class='HEADER'>
-			<img class="TITELBILD" src="images/headerbild1.jpg" alt="Edelsteinfreu(n)de Headerbild">
-		</div>
-<div class='SLIDER4'>	
-<h1>Schmuckkonfigurator</h1>
+      <a href="index.html"><img class="LOGO" src="images/Logo_DeinEdelstein_SW.png" alt="Logo"></a>
+       <ul>
+            <li>
+          <a href="DeinEdelstein_Geschichte.html">Geschichte</a>
+            </li>
+            <li>
+          <a href="DeinEdelstein_Angebote.html">Unser Angebot</a>
+              <ul> 
+                  <li><a href="Quiz.html">Selbsttest</a></li>
+            <li><a href="Konfigurator.html">Konfigurator</a></li>
+              </ul>
+            </li>
+        <li><a href="DeinEdelstein_Ueberuns.html">Über uns</a></li>
+            <li><a href="DeinEdelstein_Kontakt.html">Kontakt</a></li>
+          <li class="cart-button"><img src="images/Icon_Warenkorb.png" href="#" alt="warenkorb" id="warenkorb"></li>
+        </ul>
+    </div>
+  <div class='HEADER'>
+      <img class="TITELBILD" src="images/headerbild1.jpg" alt="Edelsteinfreu(n)de Headerbild">
+    </div>
+  <div class='SLIDER4'>  
+<h1>Schmuck-Konfigurator</h1>
 <div class="column">
 <form id="konfiguratorForm">
   <label for="produktTyp">Produkttyp:</label>
@@ -171,34 +175,33 @@ button:active {
     <img id="steinVorschau" src="" alt="Edelstein Vorschau">
   </div>
   <br>
-	<br>
+  <br>
   <button class="BUTTON1" type="button" onclick="berechnePreis()">Preis berechnen</button>
   <button type="button" onclick="zumWarenkorbHinzufügen()">Zum Warenkorb hinzufügen</button>
 </form>
 
 <p id="preisAnzeige"></p>
-	<br>
-	<br>
-	</div>
-	<div class="column">
-		<div id="schmuckVorschauContainer">
-			<img id="freistellerBild" src="images/kette-silber.png" alt="Schmuck">
-  			<img id="edelsteinBild" src="#" alt="Edelstein">
-		</div>
-	</div>
-	</div>
-	<div class='FOOTER'>
+  <br>
+  <br>
+  </div>
+  <div class="column">
+    <div id="schmuckVorschauContainer">
+      <img id="freistellerBild" src="images/kette-silber.png" alt="Schmuck">
+        <img id="edelsteinBild" src="#" alt="Edelstein">
+    </div>
+  </div>
+  </div>
+  <div class='FOOTER'>
 
   <div class="FOOTER-LEFT">
     <p>&copy; 2024 DeinEdelstein</p>
   </div>
   <div class="FOOTER-RIGHT">
     <ul>
-      <li><a href="#">Datenschutz</a></li>
       <li><a href="#">Impressum</a></li>
     </ul>
   </div>
-	</div>
-	</div>
-</body>
-</html>
+  </div>
+  </div>
+
+<div id="notificationBox"></div>

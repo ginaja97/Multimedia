@@ -250,3 +250,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.querySelector('#Lautsprecher').addEventListener('click',MusikAnAus);	
+
+	const Klingelton = new Audio('Edelsteine Audio.mp3');					// Konstante mit Datentyp Objekt (Audio)
+		function MusikAnAus() {
+			if (! Klingelton.paused) {									// Bedingung um den Status zu überprüfen ...
+				Klingelton.pause();
+			}
+			else {														// ... und um ggf. die Wiedergabe fortzusetzen
+				Klingelton.play();
+				Klingelton.loop = true;									// false um Wiederholungen zu deaktivieren
+			}
+		}

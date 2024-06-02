@@ -1,9 +1,11 @@
-document.querySelector('.STEIN1').addEventListener('click',SprechblaseAn);
-		document.querySelector('.button2').addEventListener('click',SprechblaseAus);
-		
-		function SprechblaseAn() {
-			document.querySelector('.STECKBRIEF').classList.add('SICHTBAR');
-		}
-		function SprechblaseAus() {
-			document.querySelector('.STECKBRIEF').classList.remove('SICHTBAR');
-		}
+document.querySelectorAll('.MEOW .column img').forEach(img => {
+            img.addEventListener('click', function() {
+                const steckbrief = this.parentElement.querySelector('.STECKBRIEF');
+                steckbrief.classList.toggle('SICHTBAR');
+            });
+        });
+
+        function closePopup(button) {
+            const steckbrief = button.parentElement;
+            steckbrief.classList.remove('SICHTBAR');
+        }

@@ -115,29 +115,29 @@ body {
 		}
 		
 		button {
-			position: absolute;
-			top: 30px;
-			left: 90%;
-			width: auto;
-			background-color: #D5B895;
-			color: white;
-			border-width: 2px;
-			border-style: none;
-			padding: 10px;
-			box-shadow: 5px 5px 8px gray;
-			border-radius: 10px;
-			font-weight: bold;
-			font-size: 1rem;
-			font-family: arial;
-		}
-		button:hover {
-			background-color: #A2D093;
-			color: white;
-		}
-		button:active {
-			background-color: white;
-			color: black;
-		}
+            position: absolute;
+            top: 30px;
+            left: 90%;
+            width: auto;
+            background-color: #D5B895;
+            color: white;
+            border-width: 2px;
+            border-style: none;
+            padding: 10px;
+            box-shadow: 5px 5px 8px gray;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1rem;
+            font-family: arial;
+        }
+        button:hover {
+            background-color: #A2D093;
+            color: white;
+        }
+        button:active {
+            background-color: white;
+            color: black;
+        }
 
 		.SLIDER {
 			height: auto;															/* Größe (absolute Höhe) */
@@ -236,23 +236,73 @@ body {
 		  display: table;
 		}
 
+/* Slider Styling */
+.MEOW {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.MEOW .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.MEOW .column {
+	position: relative;
+    flex: 1;
+    max-width: 22%;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius:10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.MEOW .column:hover {
+    transform: scale(1.05);
+}
+
+.MEOW .column img {
+    width: 100%;
+    border-bottom: 1px solid #ececec;
+    cursor: pointer;
+}
+
+.MEOW .column p {
+    padding: 15px;
+    background-color: white;
+    color: black;
+}
+
 		.STECKBRIEF {
+			display: none; 
 			position: absolute;
-		  	top: 950px;
-		  	left: 80px;
-			padding: 30px;
-			border-radius: 30px 30px 0 30px;
+			top: 50%; 
+			left: 50%; 
+			transform: translate(-100%, -100%);
 			background-color: white;
-			box-shadow: 5px 5px 10px 0px gray;
-			text-align: center;
 			color: black;
-			visibility: hidden;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 5px 5px 10px 0px gray;
+			z-index: 10;
+		}
+		
+		.STECKBRIEF button {
+    		position: absolute;
+    		top: 10px;
+    		right: 10px;
 		}
 
 		.SICHTBAR {
-			visibility: visible;
+			display: block;
+			
 		}
-		
+
 		.MAIN {
 			display: flex;															/* Flexbox-Layout */
 			flex-direction: row;													/* Anordnung der Items (in Zeilen) */
@@ -686,9 +736,23 @@ body {
 			transform: scale(1.5);
 		}	
 
-		#amethyst-popup {
+		#amethyst-popup {			//*WICHTIG: Die IDs mit dem Zusatz "popup" sind für die Weltkarte, NICHT für die Startseite*//
 			top: 550px;
 			left: 350px;
+		}
+
+		#Lautsprecher {
+			position: absolute;
+			width: 50px; 
+			height: 50px; 
+			bottom: 30px; 
+			left: 10px;  
+			cursor: pointer;
+			transform: scale(1.0);
+		}
+		
+		#Lautsprecher:hover {
+			transform: scale(1.5);
 		}
 		
 		.SPRECHBLASE {
@@ -723,6 +787,7 @@ body {
 		#edelsteinBild {
 			 position: absolute;
 			 top: 700px;
+			 left:500px;
 			 height: 20%;
 		}
 		

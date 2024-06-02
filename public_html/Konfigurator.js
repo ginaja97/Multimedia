@@ -83,10 +83,37 @@ function zumWarenkorbHinzufügen() {
         stein: stein,
         preis: preis
     };
+	
+    // Hinzufügen des Artikels zum Warenkorb
+    addToCart(artikel);
+	
+	// Change the Warenkorb icon in the navigation
+    document.getElementById('warenkorb').src = 'images/Icon_Warenkorb1.png';
+	
+}
 
-    // Hinzufügen des Artikels zum Warenkorb (hier könnte die Logik stehen, um den Artikel tatsächlich zum Warenkorb hinzuzufügen)
+// Funktion zum Anzeigen der Benachrichtigung
+function addToCart(artikel) {
     console.log("Artikel dem Warenkorb hinzugefügt:", artikel);
-    alert("Artikel wurde dem Warenkorb hinzugefügt!");
+    
+    // Get the notification box element
+    const notificationBox = document.getElementById('notificationBox');
+    
+    // Set the message
+    notificationBox.textContent = "Artikel wurde dem Warenkorb hinzugefügt!";
+    
+    // Display the box
+    notificationBox.style.display = 'block';
+    
+    // Hide the box after 5 seconds
+    setTimeout(() => {
+        notificationBox.style.display = 'none';
+    }, 5000);
+	// Funktion zum Ändern des Warenkorb-Icons
+	function updateWarenkorbIcon() {
+    	var warenkorbIcon = document.getElementById('warenkorb');
+    	warenkorbIcon.src = 'images/Icon_Warenkorb1.png';
+	}
 }
 
 // Funktion zum Aktualisieren der Edelstein-Vorschau

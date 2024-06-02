@@ -57,118 +57,191 @@
 		<div class='INFORMATION'>
 			<div class="TITELTEXT">
     		<h1>Herzlich Willkommen!</h1>
-   			<p>Schön, dass du den Weg auf unsere Seite und in die Welt der Edelsteine gefunden hast.<br>Lasse Dich vom Glanz der Edelsteine inspirieren und finde deinen Edelstein.</p>
+   			<p>Schön, dass du den Weg auf unsere Seite und in die Welt der Edelsteine gefunden hast.<br>Lasse dich vom Glanz der Edelsteine inspirieren und finde deinen Edelstein.</p>
   			</div>
 		</div>
 		<div class='BANNER'>
 		<h2>Erfahre mehr über die Geschichte der Edelsteine</h2>
 			<button onclick="document.location='DeinEdelstein_Geschichte.html'">Mehr erfahren</button>
 		</div>
-				<div class='SLIDER'>
+				<div class='MEOW'>
 		<h2>Finde deinen Edelstein in unserem vielfältigem Sortiment</h2>
 		<div class="row">
 		  <div class="column">
 			<div class='STEIN1'>
-			<img src="images/acquamarina.png" alt="Snow" style="width:100%">
+			<img src="images/acquamarina.png" alt="Snow" style="width:100%" onClick="toggleSteckbrief('aquamarin-popup')">
 			</div>
 			<p><strong>Aquamarin</strong></p>
-			<div class='STECKBRIEF'>
-			<p>Edelstein Steckbrief<br>
+			<div class='STECKBRIEF' id='aquamarin-popup'>
+			<p>Über den Aquamarin:<br>
 			Sternzeichen:<br>
 			Bedeutung:	
 			</p>
 			<br><br>
-			<button class="button button2">&times;</button>
+			<button class="button button2" onClick="toggleSteckbrief('aquamarin-popup')">&times;</button>
 			</div>
 		  </div>
 		  <div class="column">
 		  	<div class='STEIN1'>
-			<img src="images/amethyst.png" alt="Forest" style="width:100%">
+			<img src="images/amethyst.png" alt="Forest" style="width:100%" onClick="toggleSteckbrief('amethyst-popup')">
 			</div>
 			<p><strong>Amethyst</strong></p>
+			  <div class='STECKBRIEF' id= 'amethyst-popup'>
+			  	<p>Über den Amethyst:<br>
+			Sternzeichen:<br>
+			Bedeutung:	
+			</p>
+			</p>
+			<br><br>
+			<button class="button button2" onClick="toggleSteckbrief('amethyst-popup')">&times;</button>
+			</div>
 		  </div>
 		  <div class="column">
 		    <div class='STEIN1'>
-			<img src="images/diamante.png" alt="Mountains" style="width:100%">
+			<img src="images/diamante.png" alt="Mountains" style="width:100%" onClick="toggleSteckbrief('diamante-popup')">
 			</div>
 			<p><strong>Diamant</strong></p>
+			  <div class='STECKBRIEF' id='diamante-popup'>
+			<p>Edelstein Steckbrief<br>
+			Sternzeichen:<br>
+			Bedeutung:	
+			</p>
+			<br><br>
+			<button class="button button2" onClick="toggleSteckbrief('diamante-popup')">&times;</button>
+			</div>
 		  </div>
 		 <div class="column">
 		   	<div class='STEIN1'>
-			<img src="images/granat.png" alt="Mountains" style="width:100%">
+			<img src="images/granat.png" alt="Mountains" style="width:100%" onClick="toggleSteckbrief('granat-popup')">
 			</div>
 			<p><strong>Granat</strong></p>
+			 <div class='STECKBRIEF' id='granat-popup'>
+			<p>Edelstein Steckbrief<br>
+			Sternzeichen:<br>
+			Bedeutung:	
+			</p>
+			<br><br>
+			<button class="button button2" onClick="toggleSteckbrief('diamante-popup')">&times;</button>
+			</div>
 		  </div>
 		</div>
 		<div class="row">
 		  <div class="column">
 			<div class='STEIN1'>
-			<img src="images/mondstein.png" alt="Snow" style="width:100%">
+			<img src="images/mondstein.png" alt="Snow" style="width:100%" onClick="toggleSteckbrief('mondstein-popup')">
 			</div>
 			<p><strong>Mondstein</strong></p>
-			<div class='STECKBRIEF'>
+			<div class='STECKBRIEF' id='mondstein-popup'>
 			<p>Edelstein Steckbrief<br>
 			Herkunft:<br>
 			Sternzeichen:<br>
 			Bedeutung:	
 			</p>
 			<br><br>
-			<button class="button button2">&times;</button>
+			<button class="button button2" onClick="toggleSteckbrief('mondstein-popup')">&times;</button>
 			</div>
 		  </div>
 		  <div class="column">
 		    <div class='STEIN1'>
-			<img src="images/opal.png" alt="Forest" style="width:100%">
+			<img src="images/opal.png" alt="Forest" style="width:100%" onClick="toggleSteckbrief('opal-popup')">
 			</div>
 			<p><strong>Opal</strong></p>
+			  <div class='STECKBRIEF' id='opal-popup'>
+			<p>Edelstein Steckbrief<br>
+			Sternzeichen:<br>
+			Bedeutung:	
+			</p>
+			<br><br>
+			<button class="button button2" onClick="toggleSteckbrief('opal-popup')">&times;</button>
+			</div>
 		  </div>
 		  <div class="column">
 		    <div class='STEIN1'>
-			<img src="images/peridot.png" alt="Mountains" style="width:100%">
+			<img src="images/peridot.png" alt="Mountains" style="width:100%" onClick="toggleSteckbrief('peridot-popup')">
 			</div>
 			<p><strong>Peridot</strong></p>
+			  <div class='STECKBRIEF' id='peridot-popup'>
+			<p>Edelstein Steckbrief<br>
+			Sternzeichen:<br>
+			Bedeutung:	
+			</p>
+			<br><br>
+			<button class="button button2" onClick="toggleSteckbrief('peridot-popup')">&times;</button>
+			</div>
 		  </div>
 		 <div class="column">
 			  <div class='STEIN1'>
-			<img src="images/rubin.png" alt="Mountains" style="width:100%">
+			<img src="images/rubin.png" alt="Mountains" style="width:100%" onClick="toggleSteckbrief('rubin-popup')">
 			</div>
 			<p><strong>Rubin</strong></p>
+			 <div class='STECKBRIEF' id='rubin-popup'>
+			<p>Edelstein Steckbrief<br>
+			Sternzeichen:<br>
+			Bedeutung:	
+			</p>
+			<br><br>
+			<button class="button button2" onClick="toggleSteckbrief('rubin-popup')">&times;</button>
+			</div>
 		  </div>
 		</div>
 		<div class="row">
 		  <div class="column">
 			<div class='STEIN1'>
-			<img src="images/saphir.png" alt="Snow" style="width:100%">
+			<img src="images/saphir.png" alt="Snow" style="width:100%" onClick="toggleSteckbrief('saphir-popup')">
 			
 			</div>
 			<p><strong>Saphir</strong></p>
-			<div class='STECKBRIEF'>
+			<div class='STECKBRIEF' id='saphir-popup'>
 			<p>Edelstein Steckbrief<br>
 			Herkunft:<br>
 			Sternzeichen:<br>
 			Bedeutung:	
 			</p>
 			<br><br>
-			<button class="button button2">&times;</button>
+			<button class="button button2" onClick="toggleSteckbrief('saphir-popup')">&times;</button>
 			</div>
 		  </div>
 		  <div class="column">
 		  <div class='STEIN1'>
-			<img src="images/smaragd.png" alt="Forest" style="width:100%">
+			<img src="images/smaragd.png" alt="Forest" style="width:100%" onClick="toggleSteckbrief('smaragd-popup')">
 			</div>
 			<p><strong>Smaragd</strong></p>
+			  <div class="STECKBRIEF" id="smaragd-popup">
+			<p>Edelstein Steckbrief<br>
+			Sternzeichen:<br>
+			Bedeutung:	
+			</p>
+			<br><br>
+			<button class="button button2" onClick="toggleSteckbrief('smaragd-popup')">&times;</button>
+			</div>
 		  </div>
 		  <div class="column">
 		  <div class='STEIN1'>
-			<img src="images/tansanit.png" alt="Mountains" style="width:100%">
+			<img src="images/tansanit.png" alt="Mountains" style="width:100%" onClick="toggleSteckbrief('tansanit-popup')">
 			</div>
 			<p><strong>Tansanit</strong></p>
+			  <div class='STECKBRIEF' id=tansanit-popup>
+			<p>Edelstein Steckbrief<br>
+			Sternzeichen:<br>
+			Bedeutung:	
+			</p>
+			<br><br>
+			<button class="button button2" onClick="toggleSteckbrief('tansanit-popup')">&times;</button>
+			</div>
 		  </div>
 		 <div class="column">
 		 <div class='STEIN1'>
-			<img src="images/topas.png" alt="Mountains" style="width:100%">
+			<img src="images/topas.png" alt="Mountains" style="width:100%" onClick="toggleSteckbrief('topas-popup')">
 			</div>
 			<p><strong>Topas</strong></p>
+			 <div class='STECKBRIEF' id="topas-popup">
+			<p>Edelstein Steckbrief<br>
+			Sternzeichen:<br>
+			Bedeutung:	
+			</p>
+			<br><br>
+			<button class="button button2" onClick="toggleSteckbrief('topas-popup')">&times;</button>
+			</div>
 		  </div>
 		</div>
 
@@ -203,6 +276,16 @@
   </div>
 		</div>
 	</div>
+	<script>
+        function toggleSteckbrief(id) {
+            var popup = document.getElementById(id);
+            if (popup.style.display === "block") {
+                popup.style.display = "none";
+            } else {
+                popup.style.display = "block";
+            }
+        }
+    </script>
 	<script type="text/javascript" src="script.js"></script>
 </body>
 
