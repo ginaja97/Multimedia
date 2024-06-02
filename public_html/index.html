@@ -2,7 +2,6 @@
 <html lang='de'>
 	<head>
 		<meta charset='UTF-8'>
-		<meta name='author' content='David Röskamm'>
 		<link rel="stylesheet" href="styles.css"> 
 		<title>DeinEdelstein</title>
 		<style>
@@ -34,7 +33,7 @@
 			.container {
 
                 position: relative;
-                width: 50%;
+                width: 100%;
             }
 
             .image {
@@ -42,6 +41,13 @@
                 width: 100%;
                 height: auto;
             }
+			
+			 .image:hover {
+                display: visible;
+                width: 100%;
+                height: auto;
+            }
+
 
             .overlay {
                 position: absolute;
@@ -53,12 +59,13 @@
                   opacity:0;
                   color: white;
 				  transition: .5s ease;
-                  font-size: 15px;
-                  padding: 20px;
+                  font-size: 14px;
+                  padding-top: 20px;
+				  padding-bottom: 20px;
                   text-align: center;
             }
 
-            .container:hover .overlay {
+            .column:hover .overlay {
                 opacity: 1;
             }
 		</style>
@@ -89,8 +96,9 @@
 		</div>
 		<div class='INFORMATION'>
 			<div class="TITELTEXT">
-    		<h1>Herzlich Willkommen!</h1>
-   			<p>Schön, dass du den Weg auf unsere Seite und in die Welt der Edelsteine gefunden hast.<br>Lasse Dich vom Glanz der Edelsteine inspirieren und finde deinen Edelstein.</p>
+    		<h1>Herzlich Willkommen</h1>
+   			<p> Tauche ein in die Welt der Edelsteine, der spirituellen Energien und der individuellen Ausdruckskraft. <br><br>Erfahre wie deine Persönlichkeit mit den verschiedenen Edelsteinen in Verbindung steht und welche Schmuckstücke am besten zu dir passen. <br>Entdecke die einzigartige Schönheit und Energie der Edelsteine und lasse dich von handgefertigtem Schmuck inspirieren, der deine Persönlichkeit und <br>dein inneres Wesen zum Ausdruck bringt. Begleite uns auf einer Reise der Selbstreflexion, der Spiritualität und der Schönheit - und lasse dich von der <br>Kraft der Edelsteine und des Schmucks berühren.</p>
+			<br>
   			</div>
 		</div>
 		<div class='BANNER'>
@@ -99,7 +107,6 @@
 		</div>
 		<div class='MEOW'>
 			<h2>Finde deinen Edelstein in unserem vielfältigem Sortiment</h2>
-		
 		<div class="row">
 		  <div class="column">
 			<div class='STEIN1'>
@@ -141,7 +148,7 @@
 				<div class="container">
 					<img src="images/granat.png" alt="Mountains" style="width:100%" class="image">
 						<div class="overlay">
-							<div class="text">Sternzeichen: <strong>Wassermann</strong><br>Bedeutung:<strong>Loyalität und Entschlossenheit</strong></div>
+							<div class="text">Sternzeichen: <strong>Wassermann</strong><br>Bedeutung: <strong>Loyalität und Entschlossenheit</strong></div>
 						</div>
 				</div>
 				<p><strong>Granat</strong></p>
@@ -205,7 +212,7 @@
 					<div class="container">
 					<img src="images/saphir.png" alt="Snow" style="width:100%">
 						<div class="overlay">
-							<div class="text">Sternzeichen: <strong>Jungfrau</strong><br>Bedeutung:<strong>Freude und Hingabe</strong></div>
+							<div class="text">Sternzeichen: <strong>Jungfrau</strong><br>Bedeutung: <strong>Freude und Hingabe</strong></div>
 						</div>
 					</div>
 					<p><strong>Saphir</strong></p>
@@ -241,7 +248,7 @@
 			 	<div class="container">
 					<img src="images/topas.png" alt="Mountains" style="width:100%" class="image">
 				 	<div class="overlay">
-				 		<div class="text">Sternzeichen: <strong>Zwilling</strong><br>Bedeutung:<strong>Freundschaft und Hoffnung</strong></div>
+				 		<div class="text">Sternzeichen: <strong>Zwilling</strong><br>Bedeutung: <strong>Freundschaft und Hoffnung</strong></div>
 				 	</div>
 				</div>
 				<p><strong>Topas</strong></p>
@@ -256,11 +263,11 @@
 			</div>
 		<div class='MAIN'>															<!-- Item von BOX und Container von NAV, CONTENT, ASIDE -->
 			<div class='ARTICLE'>
-			<h1>Individuelle Schmuckstücke</h1>
-			<p>Du hast deinen Edelstein gefunden und möchtest diesen ganz nah bei dir tragen? Dann gestalte dir jetzt dein ganz individuelles Schmuckstück. Egal, ob Armband oder Kette, ob in Silber oder Gold. Du hast die freie Auswahl und konfigurierst dir dein Schmuckstück nach deinen Wünschen.</p>
+			<h2>Individuelle Schmuckstücke</h2>
+			<p>Unsere Schmuckstücke aus Edelsteinen sind einzigartige Kunstwerke, die die Schönheit und Energie der Natur in sich tragen. Jedes Stück ist handgefertigt und mit viel Liebe zum Detail gestaltet, um die einzigartigen Eigenschaften und Farben der Edelsteine hervorzuheben. Jedes Schmuckstück erzählt eine eigene Geschichte und trägt eine besondere Bedeutung in sich. <br><br>Ob als Glücksbringer, Schutzamulett oder Ausdruck der Persönlichkeit - unsere Schmuckstücke  sind Ausdruck von Individualität und Einzigartigkeit. Durch die Verbindung von handwerklichem Geschick, kreativem Design und der natürlichen Schönheit der Steine entstehen Schmuckstücke, die nicht nur ästhetisch ansprechend sind, sondern auch eine spirituelle und energetische Wirkung haben. Sie sind Ausdruck von Persönlichkeit, Stil und innerer Harmonie und begleiten euch als Träger auf eurem individuellen Lebensweg.</p>
 			</div>										<!-- Item von MAIN -->
 			<div class='ASIDE'>
-				<img class="SCHMUCKBILD" src="images/Ringbild_Startseite.jpg" alt="Ring">
+				<img class="SCHMUCKBILD" src="images/Stein-Herstellung.png" alt="Herstellung">
 			</div>											<!-- Item von MAIN -->
 		</div>
 		<div class='BANNER'>
