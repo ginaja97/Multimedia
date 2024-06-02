@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang='de'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='author' content='David Röskamm'>
+		<link rel="stylesheet" href="styles.css"> 
+		<title>DeinEdelstein</title>
+		<style>
+		.button2 {
+			position: static;
+			width: auto;
+			background-color: #D5B895;
+			color: white;
+			border-width: 2px;
+			border-style: none;
+			padding: 10px;
+			box-shadow: 5px 5px 8px gray;
+			border-radius: 10px;
+			font-weight: bold;
+			font-size: 1rem;
+			font-family: arial;
+		}
+		.button2:hover {
+			background-color: #A2D093;
+			color: white;
+		}
+		.button2:active {
+			background-color: white;
+			color: black;
+		}
+		</style>
+	</head>
+
+<body>
+	<div class='BOX'>															<!-- Container von HEADER, MAIN, FOOTER -->
+		<div class='NAV'>
+			<a href="index.html"><img class="LOGO" src="images/Logo_DeinEdelstein_SW.png" alt="Logo"></a>
+			 <ul>
+      			<li>
+					<a href="DeinEdelstein_Geschichte.html">Geschichte</a>
+      			</li>
+      			<li>
+					<a href="DeinEdelstein_Angebote.html">Unser Angebot</a>
+        			<ul> 
+          				<li><a href="Quiz.html">Selbsttest</a></li>
+						<li><a href="Konfigurator.html">Konfigurator</a></li>
+        			</ul>
+      			</li>
+				<li><a href="DeinEdelstein_Ueberuns.html">Über uns</a></li>
+      			<li><a href="DeinEdelstein_Kontakt.html">Kontakt</a></li>
+	  			<li class="cart-button"><img src="images/Icon_Warenkorb.png" href="#" alt="warenkorb" id="warenkorb"></li>
+    		</ul>
+		</div>
+		<div class='HEADER'>
+			<img class="TITELBILD" src="images/headerbild1.jpg" alt="Edelsteinfreu(n)de Headerbild">
+		</div>
+		<div class='INFORMATION'>
+			<div class="TITELTEXT">
+    		<h1>Herzlich Willkommen!</h1>
+   			<p>Schön, dass du den Weg auf unsere Seite und in die Welt der Edelsteine gefunden hast.<br>Lasse Dich vom Glanz der Edelsteine inspirieren und finde deinen Edelstein.</p>
+  			</div>
+		</div>
+		<div class='BANNER'>
+		<h2>Erfahre mehr über die Geschichte der Edelsteine</h2>
+			<button onclick="document.location='DeinEdelstein_Geschichte.html'">Mehr erfahren</button>
+		</div>
+				<div class='MEOW'>
+		<h2>Finde deinen Edelstein in unserem vielfältigem Sortiment</h2>
+		<div class="row">
+		  <div class="column">
+			<div class='STEIN1'>
+			<img src="images/acquamarina.png" alt="Snow" style="width:100%" onClick="toggleSteckbrief('aquamarin-popup')">
+			</div>
+			<p><strong>Aquamarin</strong></p>
+			<div class='STECKBRIEF' id='aquamarin-popup'>
+			<p>Edelstein Steckbrief<br>
+			Sternzeichen:<br>
+			Bedeutung:	
+			</p>
+			<br><br>
+			<button class="button button2" onClick="toggleSteckbrief('aquamarin-popup')">&times;</button>
+			</div>
+		  </div>
+		  <div class="column">
+		  	<div class='STEIN1'>
+			<img src="images/amethyst.png" alt="Forest" style="width:100%" onClick="toggleSteckbrief('amethyst-popup')">
+			</div>
+			<p><strong>Amethyst</strong></p>
+			  <div class='STECKBRIEF' id= 'amethyst-popup'>
+			<p>Edelstein Steckbrief<br>
+			Sternzeichen:<br>
+			Bedeutung:	
+			</p>
+			<br><br>
+			<button class="button button2" onClick="toggleSteckbrief('amethyst-popup')">&times;</button>
+			</div>
+		  </div>
+		  <div class="column">
+		    <div class='STEIN1'>
+			<img src="images/diamante.png" alt="Mountains" style="width:100%" onClick="toggleSteckbrief('diamante-popup')">
+			</div>
+			<p><strong>Diamant</strong></p>
+			  <div class='STECKBRIEF' id='diamante-popup'>
+			<p>Edelstein Steckbrief<br>
+			Sternzeichen:<br>
+			Bedeutung:	
+			</p>
+			<br><br>
+			<button class="button button2" onClick="toggleSteckbrief('diamante-popup')">&times;</button>
+			</div>
+		  </div>
+		 <div class="column">
+		   	<div class='STEIN1'>
+			<img src="images/granat.png" alt="Mountains" style="width:100%" onClick="toggleSteckbrief('granat-popup')">
+			</div>
+			<p><strong>Granat</strong></p>
+			 <div class='STECKBRIEF' id='granat-popup'>
+			<p>Edelstein Steckbrief<br>
+			Sternzeichen:<br>
+			Bedeutung:	
+			</p>
+			<br><br>
+			<button class="button button2" onClick="toggleSteckbrief('diamante-popup')">&times;</button>
+			</div>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="column">
+			<div class='STEIN1'>
+			<img src="images/mondstein.png" alt="Snow" style="width:100%" onClick="toggleSteckbrief('mondstein-popup')">
+			</div>
+			<p><strong>Mondstein</strong></p>
+			<div class='STECKBRIEF' id='mondstein-popup'>
+			<p>Edelstein Steckbrief<br>
+			Herkunft:<br>
+			Sternzeichen:<br>
+			Bedeutung:	
+			</p>
+			<br><br>
+			<button class="button button2" onClick="toggleSteckbrief('mondstein-popup')">&times;</button>
+			</div>
+		  </div>
+		  <div class="column">
+		    <div class='STEIN1'>
+			<img src="images/opal.png" alt="Forest" style="width:100%" onClick="toggleSteckbrief('opal-popup')">
+			</div>
+			<p><strong>Opal</strong></p>
+			  <div class='STECKBRIEF' id='opal-popup'>
+			<p>Edelstein Steckbrief<br>
+			Sternzeichen:<br>
+			Bedeutung:	
+			</p>
+			<br><br>
+			<button class="button button2" onClick="toggleSteckbrief('opal-popup')">&times;</button>
+			</div>
+		  </div>
+		  <div class="column">
+		    <div class='STEIN1'>
+			<img src="images/peridot.png" alt="Mountains" style="width:100%" onClick="toggleSteckbrief('peridot-popup')">
+			</div>
+			<p><strong>Peridot</strong></p>
+			  <div class='STECKBRIEF' id='peridot-popup'>
+			<p>Edelstein Steckbrief<br>
+			Sternzeichen:<br>
+			Bedeutung:	
+			</p>
+			<br><br>
+			<button class="button button2" onClick="toggleSteckbrief('peridot-popup')">&times;</button>
+			</div>
+		  </div>
+		 <div class="column">
+			  <div class='STEIN1'>
+			<img src="images/rubin.png" alt="Mountains" style="width:100%" onClick="toggleSteckbrief('rubin-popup')">
+			</div>
+			<p><strong>Rubin</strong></p>
+			 <div class='STECKBRIEF' id='rubin-popup'>
+			<p>Edelstein Steckbrief<br>
+			Sternzeichen:<br>
+			Bedeutung:	
+			</p>
+			<br><br>
+			<button class="button button2" onClick="toggleSteckbrief('rubin-popup')">&times;</button>
+			</div>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="column">
+			<div class='STEIN1'>
+			<img src="images/saphir.png" alt="Snow" style="width:100%" onClick="toggleSteckbrief('saphir-popup')">
+			
+			</div>
+			<p><strong>Saphir</strong></p>
+			<div class='STECKBRIEF' id='saphir-popup'>
+			<p>Edelstein Steckbrief<br>
+			Herkunft:<br>
+			Sternzeichen:<br>
+			Bedeutung:	
+			</p>
+			<br><br>
+			<button class="button button2" onClick="toggleSteckbrief('saphir-popup')">&times;</button>
+			</div>
+		  </div>
+		  <div class="column">
+		  <div class='STEIN1'>
+			<img src="images/smaragd.png" alt="Forest" style="width:100%" onClick="toggleSteckbrief('smaragd-popup')">
+			</div>
+			<p><strong>Smaragd</strong></p>
+			  <div class="STECKBRIEF" id="smaragd-popup">
+			<p>Edelstein Steckbrief<br>
+			Sternzeichen:<br>
+			Bedeutung:	
+			</p>
+			<br><br>
+			<button class="button button2" onClick="toggleSteckbrief('smaragd-popup')">&times;</button>
+			</div>
+		  </div>
+		  <div class="column">
+		  <div class='STEIN1'>
+			<img src="images/tansanit.png" alt="Mountains" style="width:100%" onClick="toggleSteckbrief('tansanit-popup')">
+			</div>
+			<p><strong>Tansanit</strong></p>
+			  <div class='STECKBRIEF' id=tansanit-popup>
+			<p>Edelstein Steckbrief<br>
+			Sternzeichen:<br>
+			Bedeutung:	
+			</p>
+			<br><br>
+			<button class="button button2" onClick="toggleSteckbrief('tansanit-popup')">&times;</button>
+			</div>
+		  </div>
+		 <div class="column">
+		 <div class='STEIN1'>
+			<img src="images/topas.png" alt="Mountains" style="width:100%" onClick="toggleSteckbrief('topas-popup')">
+			</div>
+			<p><strong>Topas</strong></p>
+			 <div class='STECKBRIEF' id="topas-popup">
+			<p>Edelstein Steckbrief<br>
+			Sternzeichen:<br>
+			Bedeutung:	
+			</p>
+			<br><br>
+			<button class="button button2" onClick="toggleSteckbrief('topas-popup')">&times;</button>
+			</div>
+		  </div>
+		</div>
+
+		</div>
+		<div class='BANNER'>
+			<h2>Mache den Test und finde den zu dir passenden Edelstein</h2>
+			<button onclick="document.location='Quiz.html'">Mehr erfahren</button>
+			</div>
+		<div class='MAIN'>															<!-- Item von BOX und Container von NAV, CONTENT, ASIDE -->
+			<div class='ARTICLE'>
+			<h1>Individuelle Schmuckstücke</h1>
+			<p>Du hast deinen Edelstein gefunden und möchtest diesen ganz nah bei dir tragen? Dann gestalte dir jetzt dein ganz individuelles Schmuckstück. Egal, ob Armband oder Kette, ob in Silber oder Gold. Du hast die freie Auswahl und konfigurierst dir dein Schmuckstück nach deinen Wünschen.</p>
+			</div>										<!-- Item von MAIN -->
+			<div class='ASIDE'>
+				<img class="SCHMUCKBILD" src="images/Ringbild_Startseite.jpg" alt="Ring">
+			</div>											<!-- Item von MAIN -->
+		</div>
+		<div class='BANNER'>
+		<h2>Personalisiere dir dein individuelles Schmuckstück</h2>
+			<button onclick="document.location='Konfigurator.html'">Jetzt gestalten</button>
+		</div>
+		
+		<div class='FOOTER'>
+
+  <div class="FOOTER-LEFT">
+    <p>&copy; 2024 DeinEdelstein</p>
+  </div>
+  <div class="FOOTER-RIGHT">
+    <ul>
+      <li><a href="DeinEdelstein_Impressum.html">Impressum</a></li>
+    </ul>
+  </div>
+		</div>
+	</div>
+	<script>
+        function toggleSteckbrief(id) {
+            var popup = document.getElementById(id);
+            if (popup.style.display === "block") {
+                popup.style.display = "none";
+            } else {
+                popup.style.display = "block";
+            }
+        }
+    </script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
