@@ -127,18 +127,18 @@ function updateSteinVorschau() {
 
     // Position des Edelsteins anpassen (Beispielwerte)
     var positionen = {
-        'aquamarin': {top: '50px', left: '100px'},
-        'smaragd': {top: '55px', left: '105px'},
-        'topas': {top: '60px', left: '110px'},
-        'mondstein': {top: '65px', left: '115px'},
-        'diamant': {top: '70px', left: '120px'},
-        'saphir': {top: '75px', left: '125px'},
-        'opal': {top: '80px', left: '130px'},
-        'peridot': {top: '85px', left: '135px'},
-        'tansanit': {top: '90px', left: '140px'},
-        'rubin': {top: '95px', left: '145px'},
-        'granat': {top: '100px', left: '150px'},
-        'amethyst': {top: '105px', left: '155px'}
+        'aquamarinkreis': {top: '890px',left: '1141px'},
+        'smaragdkreis': {top: '890px',left: '1141px'},
+        'topaskreis': {top: '890px',left: '1141px'},
+        'mondsteinkreis': {top: '890px',left: '1141px'},
+        'diamantkreis': {top: '890px',left: '1141px'},
+        'saphirkreis': {top: '890px',left: '1141px'},
+        'opalkreis': {top: '890px',left: '1141px'},
+        'peridotkreis': {top: '890px',left: '1141px'},
+        'tansanitkreis': {top: '890px',left: '1141px'},
+        'rubinkreis': {top: '890px',left: '1141px'},
+        'granatkreis': {top: '890px',left: '1141px'},
+        'amethystkreis': {top: '890px',left: '1141px'}
     };
 
     var position = positionen[stein];

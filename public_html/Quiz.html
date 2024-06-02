@@ -3,9 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz</title>
+  <title>DeinEdelstein - Selbsttest</title>
 	<script type="text/javascript" src="script_quiz.js"></script>
-	<link rel="stylesheet" href="styles.css"> 
+	<link rel="stylesheet" href="styles.css">
+	<style>
+		.TEST {
+			height: auto;															/* Größe (absolute Höhe) */
+			width: 100%;															/* Größe (relative Breite abhängig vom Eltern-Element) */
+			background-color: #FFFFFF;
+			color: black;
+		}
+		.TEST h1 {
+			padding-top: 20px;
+			text-align: center;
+			color: black;
+		}
+		.TEST h4 {
+			padding-top: 20px;
+			padding-left: 70px;
+			color: black;
+			
+		}
+		.TEST form {
+			padding-left: 70px;
+		}
+
+		.TEST p {
+			padding-left: 40px;
+			padding-right: 40px;
+			text-align:center;
+		}
+
+		.TEST * {
+		  box-sizing: border-box;
+		}	
+	</style>
 </head>
 <body>
 <div class='BOX'>		
@@ -31,12 +63,12 @@
 			<img class="TITELBILD" src="images/headerbild1.jpg" alt="Edelsteinfreu(n)de Headerbild">
 		</div>
 <div class='TEST'>
-		<h1>Mache jetzt den Test und finde<br>deinen persönlichen Edelstein</h1>
+		<h1>Mache jetzt den Test und finde deinen persönlichen Edelstein</h1>
 		<p>
-		Man geht davon aus, dass Edelsteine, die den einzelnen Sternzeichen zugeordnet sind, die Persönlichkeit sowohl positiv als auch negativ beeinflussen können. Außerdem wird ihnen die Fähigkeit zugeschrieben, Schwächen zu mildern und das körperliche und geistige Wohlbefinden zu verbessern, indem sie die natürlichen Stärken des jeweiligen Sternzeichens hervorheben. Finde jetzt heraus, welcher Edelstein deine persönlichen Stärken hervorhebt und ideal zu deiner besonderen Persönlichkeit passt.
+		Man geht davon aus, dass Edelsteine, die den einzelnen Sternzeichen zugeordnet sind, die Persönlichkeit sowohl positiv als auch negativ beeinflussen können. Außerdem wird ihnen die Fähigkeit zugeschrieben, Schwächen zu mildern und das körperliche und geistige Wohlbefinden zu verbessern, indem sie die natürlichen Stärken des jeweiligen Sternzeichens hervorheben. Finde jetzt heraus, welcher Edelstein deine persönlichen Stärken hervorhebt und <br>ideal zu deiner besonderen Persönlichkeit passt.
 		</p>
 		
-<p><strong>Welches Sternzeichen bist du?</strong></p>
+<h4><strong>Welches Sternzeichen bist du?</strong></h4>
 <form id="question1">
   <input type="radio" id="widder" name="sign" value="widder">
   <label for="widder">Widder</label><br>
@@ -64,7 +96,7 @@
   <label for="fische">Fische</label><br>
 </form>
 
-<p><strong>Wie würdest du deinen Charakter beschreiben?</strong></p>
+<h4><strong>Wie würdest du deinen Charakter beschreiben?</strong></h4>
 <form id="question2">
   <input type="radio" id="abenteuerlustig" name="character" value="abenteuerlustig">
   <label for="abenteuerlustig">Abenteuerlustig und spontan</label><br>
@@ -74,7 +106,7 @@
   <label for="kommunikativ">Kommunikativ und vielseitig interessiert</label><br>
 </form>
 
-<p><strong>Welche Farbe spricht dich am meisten an?</strong></p>
+<h4><strong>Welche Farbe spricht dich am meisten an?</strong></h4>
 <form id="question3">
   <input type="radio" id="rot" name="color" value="rot">
   <label for="rot">Rot</label><br>
@@ -88,7 +120,7 @@
   <label for="gelb">Gelb</label><br>
 </form>
 
-<p><strong>Welche Eigenschaft ist dir am wichtigsten?</strong></p>
+<h4><strong>Welche Eigenschaft ist dir am wichtigsten?</strong></h4>
 <form id="question4">
   <input type="radio" id="mut" name="trait" value="mut">
   <label for="mut">Mut</label><br>
@@ -98,7 +130,7 @@
   <label for="intellekt">Intellekt</label><br>
 </form>
 
-<p><strong>Welche Aktivität machst du am liebsten in deiner Freizeit?</strong></p>
+<h4><strong>Welche Aktivität machst du am liebsten in deiner Freizeit?</strong></h4>
 <form id="question5">
   <input type="radio" id="wandern" name="activity" value="wandern">
   <label for="wandern">Wandern in den Bergen</label><br>
@@ -108,7 +140,7 @@
   <label for="lesen">Lesen</label><br>
 </form>
 
-<p><strong>Welche Landschaft gefällt dir am besten?</strong></p>
+<h4><strong>Welche Landschaft gefällt dir am besten?</strong></h4>
 <form id="question6">
   <input type="radio" id="meereskueste" name="landscape" value="meereskueste">
   <label for="meereskueste">Meeresküste</label><br>
@@ -120,7 +152,7 @@
   <label for="wuesten">Wüsten</label><br>
 </form>
 	
-	<p><strong>Welche Jahreszeit magst du am liebsten?</strong></p>
+	<h4><strong>Welche Jahreszeit magst du am liebsten?</strong></h4>
 <form id="question7">
   <input type="radio" id="fruehling" name="season" value="fruehling">
   <label for="fruehling">Frühling</label><br>
@@ -132,7 +164,7 @@
   <label for="winter">Winter</label><br>
 </form>
 
-<p><strong>Welche Art von Musik hörst du am liebsten?</strong></p>
+<h4><strong>Welche Art von Musik hörst du am liebsten?</strong></h4>
 <form id="question8">
   <input type="radio" id="rock" name="music" value="rock">
   <label for="rock">Rock</label><br>
@@ -142,7 +174,9 @@
   <label for="pop">Pop</label><br>
 <br>
 <br>
+<br>
 	<button class='TESTBUTTON' onclick="evaluateQuiz()">Quiz auswerten</button>
+<br>
 <br>
 <br>
 <br>
@@ -155,7 +189,7 @@
   </div>
   <div class="FOOTER-RIGHT">
     <ul>
-      <li><a href="#">Impressum</a></li>
+      <li><a href="DeinEdelstein_Impressum.html">Impressum</a></li>
     </ul>
   </div>
 		</div>

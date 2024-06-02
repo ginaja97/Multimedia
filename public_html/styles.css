@@ -205,7 +205,7 @@ body {
 		  float: left;
 		  width: 33.33%;
 		  padding-left: 50px;
-		  padding-right: 10px;
+		  padding-right: 20px;
 		  padding-bottom: 40px;
 		  padding-top: 40px;
 		}
@@ -241,6 +241,7 @@ body {
     text-align: center;
     padding: 20px;
     background-color: white;
+	color: black;
 }
 
 .MEOW .row {
@@ -322,7 +323,7 @@ body {
 			color: black;
 		}
 
-		.ARTICLE h1 {
+		.ARTICLE h2 {
 			color: black;
 		}
 
@@ -382,7 +383,10 @@ body {
 		  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 		}
 		.FORMULAR {
-			padding: 80px;
+			padding-left: 100px;
+			padding-right: 150px;
+			padding-top: 30px;
+			padding-bottom: 80px;
 			background-color: white;
 			color: black;
 		}
@@ -403,14 +407,14 @@ body {
 		.FOOTER {
 			padding-left: 20px;
 			padding-right: 20px;
-			background-color: #FFFFFF;
+			background-color: #D5B895;
 			font-family: Roboto;
  			display: flex;
  			justify-content: space-between; 
 		}
 		.FOOTER-LEFT {
   			flex: 1; 
-  			color: #D5B895;
+  			color: #FFFFFF;
 		}
 
 		.FOOTER-RIGHT {
@@ -434,7 +438,7 @@ body {
 		}
 
 		.FOOTER-RIGHT ul li a {
- 			color: #D5B895;
+ 			color: #FFFFFF;
 			text-decoration: none;
 		}
 
@@ -467,13 +471,12 @@ body {
 		.TESTBUTTON {
 			position: absolute;
 			top: auto;
-			left: 50%;
+			left: 70px;
 			width: auto;
 			background-color: #D5B895;
 			color: white;
 			border-width: 2px;
 			border-style: none;
-			padding: 10px;
 			box-shadow: 5px 5px 8px gray;
 			border-radius: 10px;
 			font-weight: bold;
@@ -779,15 +782,14 @@ body {
 		
 		#freistellerBild {
 			 position: absolute;
-			 padding-top: 40px;
-			 left: 900px ;
-			 height: 70%;		
+			 padding-top: 20px;
+			padding-left: 100px;
+			 left: 800px ;
+			 height: 60%;		
 		}
 
 		#edelsteinBild {
 			 position: absolute;
-			 top: 700px;
-			 left:500px;
-			 height: 20%;
+			 height: 70px;
 		}
 		

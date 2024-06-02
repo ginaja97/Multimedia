@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DeinEdelstein-Schmuckkonfigurator</title>
+<title>DeinEdelstein - Konfigurator</title>
 <script type="text/javascript" src="Konfigurator.js"></script>
 <link rel="stylesheet" href="styles.css"> 
 <style>
@@ -24,7 +24,7 @@
   }
   button {
     position: absolute;
-    left: 83%;
+    left: 88%;
     top: 1025px;
     width: auto;
     background-color: #D5B895;
@@ -78,7 +78,6 @@
   }
   .SLIDER4 p {
     padding-top: 20px;
-    text-align: center;
     color: black;
   }
   .SLIDER4 h1 {
@@ -95,7 +94,7 @@
     padding-left: 50px;
     padding-right: 10px;
     padding-bottom: 40px;
-    padding-top: 40px;
+    padding-top: 60px;
   }
   .SLIDER row::after {
     content: "";
@@ -105,10 +104,11 @@
   .column {
     float: left;
     width: 50%;
-    padding-left: 20px;
+    padding-left: 50px;
     padding-right: 10px;
     padding-bottom: 40px;
-    padding-top: 40px;
+	padding-top: 40px;
+   
   }
 </style>
 </head>
@@ -159,35 +159,33 @@
   <div id="steinOptionen">
     <label for="stein">Edelstein:</label>
     <select id="stein" onchange="updateSteinVorschau()">
-      <option value="aquamarin">Aquamarin</option>
-      <option value="smaragd">Smaragd</option>
-      <option value="topas">Topas</option>
-      <option value="mondstein">Mondstein</option>
-      <option value="diamant">Diamant</option>
-      <option value="saphir">Saphir</option>
-      <option value="opal">Opal</option>
-      <option value="peridot">Peridot</option>
-      <option value="tansanit">Tansanit</option>
-      <option value="rubin">Rubin</option>
-      <option value="granat">Granat</option>
-      <option value="amethyst">Amethyst</option>
+      <option value="aquamarinkreis">Aquamarin</option>
+      <option value="smaragdkreis">Smaragd</option>
+      <option value="topaskreis">Topas</option>
+      <option value="mondsteinkreis">Mondstein</option>
+      <option value="diamantkreis">Diamant</option>
+      <option value="saphirkreis">Saphir</option>
+      <option value="opalkreis">Opal</option>
+      <option value="peridotkreis">Peridot</option>
+      <option value="tansanitkreis">Tansanit</option>
+      <option value="rubinkreis">Rubin</option>
+      <option value="granatkreis">Granat</option>
+      <option value="amethystkreis">Amethyst</option>
     </select><br>
     <img id="steinVorschau" src="" alt="Edelstein Vorschau">
   </div>
   <br>
   <br>
   <button class="BUTTON1" type="button" onclick="berechnePreis()">Preis berechnen</button>
-  <button type="button" onclick="zumWarenkorbHinzufügen()">Zum Warenkorb hinzufügen</button>
+  <button type="button" onclick="zumWarenkorbHinzufügen()">In den Warenkorb</button>
 </form>
-
 <p id="preisAnzeige"></p>
-  <br>
-  <br>
+ 
   </div>
   <div class="column">
     <div id="schmuckVorschauContainer">
-      <img id="freistellerBild" src="images/kette-silber.png" alt="Schmuck">
-        <img id="edelsteinBild" src="#" alt="Edelstein">
+      <img id="freistellerBild" src="#" alt="Schmuck">
+	<img id="edelsteinBild" src="#" alt="Edelstein">
     </div>
   </div>
   </div>
@@ -198,7 +196,7 @@
   </div>
   <div class="FOOTER-RIGHT">
     <ul>
-      <li><a href="#">Impressum</a></li>
+      <li><a href="DeinEdelstein_Impressum.html">Impressum</a></li>
     </ul>
   </div>
   </div>
