@@ -145,7 +145,7 @@ body {
 			background-color: #FFFFFF;
 		}
 		.SLIDER p {
-			text-align: center;
+			text-align: left;
 			color: black;
 		}
 		.SLIDER h2 {
@@ -167,7 +167,7 @@ body {
 			padding-top: 20px;
 			padding-right: 10ox;
 			padding-left: 10px;
-			text-align: center;
+			text-align: left;
 			color: black;
 		}
 		.SLIDER2 h2 {
@@ -187,7 +187,7 @@ body {
 
 		.SLIDER3 p {
 			padding-top: 20px;
-			text-align: center;
+			text-align: left;
 			color: black;
 		}
 
@@ -345,7 +345,7 @@ body {
 		}
 		.INFORMATION p {
 			color: black;
-			text-align: center;
+			text-align: left;
 		}
 
 		.INFORMATION h1 {
