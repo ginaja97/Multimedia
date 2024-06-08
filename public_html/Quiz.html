@@ -36,7 +36,26 @@
 
 		.TEST * {
 		  box-sizing: border-box;
-		}	
+		}
+		#notificationBox {
+  display: none;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+#notificationBox.success {
+  color: snow;
+  background-color: #CDAA7D;
+  border-color: #d6e9c6;
+}
+
+#notificationBox.error {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
 	</style>
 </head>
 <body>
@@ -151,8 +170,8 @@
   <input type="radio" id="wuesten" name="landscape" value="wuesten">
   <label for="wuesten">Wüsten</label><br>
 </form>
-	
-	<h4><strong>Welche Jahreszeit magst du am liebsten?</strong></h4>
+  
+  <h4><strong>Welche Jahreszeit magst du am liebsten?</strong></h4>
 <form id="question7">
   <input type="radio" id="fruehling" name="season" value="fruehling">
   <label for="fruehling">Frühling</label><br>
@@ -175,14 +194,16 @@
 <br>
 <br>
 <br>
-	<button class='TESTBUTTON' onclick="evaluateQuiz()">Quiz auswerten</button>
+  <button class='TESTBUTTON' onclick="evaluateQuiz(event)">Quiz auswerten</button>
 <br>
 <br>
 <br>
 <br>
 </form>
-	</div>
-	<div class='FOOTER'>
+	 <button type="button" onclick="evaluateQuiz(event)">Ergebnis anzeigen</button>
+      <div id="notificationBox"></div>
+  </div>
+  <div class='FOOTER'>
 
   <div class="FOOTER-LEFT">
     <p>&copy; 2024 DeinEdelstein</p>
@@ -192,10 +213,9 @@
       <li><a href="DeinEdelstein_Impressum.html">Impressum</a></li>
     </ul>
   </div>
-		</div>
+    </div>
 </div>
 
 
 </body>
 </html>
-
