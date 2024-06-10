@@ -160,3 +160,4 @@ function updateFreistellerBild() {
 
     freistellerBild.src = 'images/' + produktTyp + '-' + material + '.png';
 }
+	// Erstellung mit Hilfe von Inhalten aus Tutorium/Vorlesungsmaterialen, https://www.w3schools.com/ und https://chatgpt.com/
