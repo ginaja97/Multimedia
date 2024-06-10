@@ -299,3 +299,4 @@ function evaluateQuiz(event) {
     notificationBox.style.display = 'none';
   }, 10000);
 }
+	// Erstellung mit Hilfe von Inhalten aus Tutorium/Vorlesungsmaterialen, https://www.w3schools.com/ und https://chatgpt.com/
