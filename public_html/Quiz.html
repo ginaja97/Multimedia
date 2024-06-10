@@ -7,6 +7,30 @@
 	<script type="text/javascript" src="script_quiz.js"></script>
 	<link rel="stylesheet" href="styles.css">
 	<style>
+		 button {
+    position: absolute;
+    left: 88%;
+    top: 2415px;
+    width: auto;
+    background-color: #D5B895;
+    color: white;
+    border-width: 2px;
+    border-style: none;
+    padding: 10px;
+    box-shadow: 5px 5px 8px gray;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: 'Roboto';
+  }
+  button:hover {
+    background-color: #A2D093;
+    color: white;
+  }
+  button:active {
+    background-color: white;
+    color: black;
+  }
 		.TEST {
 			height: auto;															/* Größe (absolute Höhe) */
 			width: 100%;															/* Größe (relative Breite abhängig vom Eltern-Element) */
@@ -31,7 +55,7 @@
 		.TEST p {
 			padding-left: 40px;
 			padding-right: 40px;
-			text-align:center;
+			text-align: left;
 		}
 
 		.TEST * {
@@ -64,10 +88,10 @@
 			<a href="index.html"><img class="LOGO" src="images/Logo_DeinEdelstein_SW.png" alt="Logo"></a>
 			 <ul>
       			<li>
-					<a href="DeinEdelstein_Geschichte.html">Geschichte</a>
+					<a href="DeinEdelstein_Geschichte.html">Historie</a>
       			</li>
       			<li>
-					<a href="DeinEdelstein_Angebote.html">Unser Angebot</a>
+					<a href="DeinEdelstein_Angebote.html">Leistungen</a>
         			<ul> 
           				<li><a href="Quiz.html">Selbsttest</a></li>
 						<li><a href="Konfigurator.html">Konfigurator</a></li>
@@ -79,7 +103,7 @@
     		</ul>
 		</div>
 	<div class='HEADER'>
-			<img class="TITELBILD" src="images/headerbild1.jpg" alt="Edelsteinfreu(n)de Headerbild">
+			<img class="TITELBILD" src="images/headerbildselbsttest.jpg" alt="Edelsteinfreu(n)de Headerbild">
 		</div>
 <div class='TEST'>
 		<h1>Selbsttest</h1>
@@ -200,7 +224,6 @@
 <br>
 <br>
 </form>
-	 <button type="button" onclick="evaluateQuiz(event)">Ergebnis anzeigen</button>
       <div id="notificationBox"></div>
   </div>
   <div class='FOOTER'>
@@ -219,4 +242,4 @@
 
 </body>
 </html>
-	// Erstellung mit Hilfe von Inhalten aus Tutorium/Vorlesungsmaterialen, https://www.w3schools.com/ und https://chatgpt.com/
+<!-- Erstellung mit Hilfe von Inhalten aus Tutorium/Vorlesungsmaterialen, https://www.w3schools.com/ und https://chatgpt.com/ -->

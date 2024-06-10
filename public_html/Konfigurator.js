@@ -127,18 +127,18 @@ function updateSteinVorschau() {
 
     // Position des Edelsteins anpassen (Beispielwerte)
     var positionen = {
-        'aquamarinkreis': {top: '890px',left: '1141px'},
-        'smaragdkreis': {top: '890px',left: '1141px'},
-        'topaskreis': {top: '890px',left: '1141px'},
-        'mondsteinkreis': {top: '890px',left: '1141px'},
-        'diamantkreis': {top: '890px',left: '1141px'},
-        'saphirkreis': {top: '890px',left: '1141px'},
-        'opalkreis': {top: '890px',left: '1141px'},
-        'peridotkreis': {top: '890px',left: '1141px'},
-        'tansanitkreis': {top: '890px',left: '1141px'},
-        'rubinkreis': {top: '890px',left: '1141px'},
-        'granatkreis': {top: '890px',left: '1141px'},
-        'amethystkreis': {top: '890px',left: '1141px'}
+        'aquamarinkreis': {top: '868px',left: '1141px'},
+        'smaragdkreis': {top: '868px',left: '1141px'},
+        'topaskreis': {top: '868px',left: '1141px'},
+        'mondsteinkreis': {top: '868px',left: '1141px'},
+        'diamantkreis': {top: '868px',left: '1141px'},
+        'saphirkreis': {top: '868px',left: '1141px'},
+        'opalkreis': {top: '868px',left: '1141px'},
+        'peridotkreis': {top: '868px',left: '1141px'},
+        'tansanitkreis': {top: '868px',left: '1141px'},
+        'rubinkreis': {top: '868px',left: '1141px'},
+        'granatkreis': {top: '868px',left: '1141px'},
+        'amethystkreis': {top: '868px',left: '1141px'},
     };
 
     var position = positionen[stein];
@@ -160,4 +160,4 @@ function updateFreistellerBild() {
 
     freistellerBild.src = 'images/' + produktTyp + '-' + material + '.png';
 }
-	// Erstellung mit Hilfe von Inhalten aus Tutorium/Vorlesungsmaterialen, https://www.w3schools.com/ und https://chatgpt.com/
+	// Erstellung mit Hilfe von Inhalten aus Tutorium/Vorlesungsmaterialen, https://www.w3schools.com/ und https://chatgpt.com
