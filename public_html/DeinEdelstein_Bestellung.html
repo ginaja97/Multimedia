@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang='de'>
+	<head>
+		<meta charset='UTF-8'>
+		<link rel="stylesheet" href="styles.css"> 
+		<title>Bestellungvorgang</title>
+	</head>
+	<style>
+	.FORMULAR input[type="email"], select, textarea {
+	  width: 100%;
+	  padding: 12px;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	  box-sizing: border-box;
+	  margin-top: 6px;
+	  margin-bottom: 16px;
+	  resize: vertical;
+	}
+	.FORMULAR input[type="password"], select, textarea {
+	  width: 100%;
+	  padding: 12px;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	  box-sizing: border-box;
+	  margin-top: 6px;
+	  margin-bottom: 16px;
+	  resize: vertical;
+		}
+		
+	  button {
+            position: absolute;
+            top: 1280px;
+            left: 110px;
+            width: auto;
+            background-color: #D5B895;
+            color: white;
+            border-width: 2px;
+            border-style: none;
+            padding: 10px;
+            box-shadow: 5px 5px 8px gray;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1rem;
+            font-family: arial;
+        }
+        button:hover {
+            background-color: #A2D093;
+            color: white;
+        }
+        button:active {
+            background-color: white;
+            color: black;
+        }
+		  .form-group .address-fields {
+            display: flex;
+            gap: 10px;
+        }
+        .form-group .address-fields .field {
+            flex: 1;
+        }
+		  .form-group .address-fields {
+            display: flex;
+            gap: 10px;
+        }
+        .form-group .address-fields .field {
+            flex: 1;
+        }
+		.payment-methods label {
+			padding-left: 10px;
+		}
+	</style>
+
+<body>
+	<div class='BOX'>															<!-- Container von HEADER, MAIN, FOOTER -->
+<div class='NAV'>
+			<a href="index.html"><img class="LOGO" src="images/Logo_DeinEdelstein_SW.png" alt="Logo"></a>
+			 <ul>
+      			<li>
+					<a href="DeinEdelstein_Geschichte.html">Historie</a>
+      			</li>
+      			<li>
+					<a href="DeinEdelstein_Angebote.html">Leistungen</a>
+        			<ul> 
+          				<li><a href="Quiz.html">Selbsttest</a></li>
+						<li><a href="Konfigurator.html">Konfigurator</a></li>
+        			</ul>
+      			</li>
+				<li><a href="DeinEdelstein_Ueberuns.html">Über uns</a></li>
+      			<li><a href="DeinEdelstein_Kontakt.html">Kontakt</a></li>
+	  			<li class="cart-button"><a href="DeinEdelstein_Bestellung.html"><img src="images/Icon_Warenkorb1.png" href="DeinEdelstein_Bestellung.html" alt="warenkorb" id="warenkorb"></a></li>
+    		</ul>
+		</div>
+		<div class='HEADER'>
+			<img class="TITELBILD" src="images/headerbildschmuck.jpg" alt="Edelsteinfreu(n)de Headerbild">
+		</div>
+			<div class="FORMULAR">
+			<h1>Bestellformular</h1>
+			<p>Fülle das unten stehende Formular aus, wähle eine Zahlungsmethode und Klicke auf "Jetzt bestellen". Je nach Zahlungsmethode wirst du zum Partner weitergeleitet. Nach der Bestellung kehrst du zurück zur Webseite. In Kürze erhältest du von uns eine Bestätigungsmail mit deiner Bestellung.</p>
+				<br>
+			 <form action="Bestellung_submit.html" class="form" method="post" id="registrierungs-form" required>
+					<label id="name">Vorname:</label>
+					<input type="text" name="text" size="75" placeholder="Name" id="name-input" required>
+					<label id="vorname">Nachname:</label> 
+					<input type="text" name="text" size="75" placeholder="Vorname" id="vorname-input" required>
+					<label id="e-mail">E-Mail:</label>
+					<input type="email" name="mail" size="75" placeholder="E-Mail-Adresse" id="email-input" required>
+				 	<div class="form-group">
+           			<label for="street">Adresse</label>
+            		<div class="address-fields">
+                		<div class="field">
+                    		<input type="text" id="street" name="street" placeholder="Straße" required>
+                		</div>
+                		<div class="field">
+                    		<input type="text" id="houseNumber" name="houseNumber" placeholder="Hausnummer" required>
+                		</div>
+            		</div>
+       				 </div>
+				 <div class="form-group">
+						<label for="city">Stadt und PLZ</label>
+				 	<div class="address-fields">
+						<div class="field">
+						<input type="text" id="city" name="city" placeholder="Stadt" required>
+						</div>
+						<div class="field">
+						<input type="text" id="zip" name="zip" placeholder="Postleitzahl" required>
+						</div>
+				 </div>
+				 </div>
+            		<br><label>Zahlungsmethode</label><br><br>
+							<div class="payment-methods">
+								<label>
+									<input type="radio" name="paymentMethod" value="Rechnung">
+									Rechnung
+								</label>
+								<label>
+									<input type="radio" name="paymentMethod" value="Kreditkarte">
+									Kreditkarte
+								</label>
+								<label>
+									<input type="radio" name="paymentMethod" value="PayPal">
+									PayPal
+								</label>
+								<label>
+									<input type="radio" name="paymentMethod" value="Banküberweisung" required>
+									Banküberweisung
+								</label>
+								<label>
+									<input type="radio" name="paymentMethod" value="Sofortüberweisung" required>
+									Sofortüberweisung
+								</label>
+							</div>
+				 	<br>
+				  	<output id="Hinweis"></output>
+				  	<button type="submit" value="Senden" id="button">Jetzt bestellen</button>
+				 <br>
+				</form>
+				<br>
+			</div>
+		<div class='FOOTER'>
+
+  <div class="FOOTER-LEFT">
+    <p>&copy; 2024 DeinEdelstein</p>
+  </div>
+  <div class="FOOTER-RIGHT">
+    <ul>
+      <li><a href="DeinEdelstein_Impressum.html">Impressum</a></li>
+    </ul>
+  </div>
+		</div>
+	</div>
+</body>
+
+</html>
+<!-- Erstellung mit Hilfe von Inhalten aus Tutorium/Vorlesungsmaterialen und https://www.w3schools.com/ -->

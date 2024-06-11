@@ -2,7 +2,6 @@
 <html lang='de'>
 	<head>
 		<meta charset='UTF-8'>
-		<meta name='author' content='David Röskamm'>
 		<link rel="stylesheet" href="styles.css"> 
 		<title>DeinEdelstein - Kontakt</title>
 	</head>
@@ -24,7 +23,7 @@
       			</li>
 				<li><a href="DeinEdelstein_Ueberuns.html">Über uns</a></li>
       			<li><a href="DeinEdelstein_Kontakt.html">Kontakt</a></li>
-	  			<li class="cart-button"><img src="images/Icon_Warenkorb.png" href="#" alt="warenkorb" id="warenkorb"></li>
+	  			<li class="cart-button"><a href="DeinEdelstein_Warenkorb.html"><img src="images/Icon_Warenkorb.png" href="DeinEdelstein_Bestellung.html" alt="warenkorb" id="warenkorb"></a></li>
     		</ul>
 		</div>
 		<div class='HEADER'>
@@ -39,16 +38,15 @@
 			<p>Wir freuen uns darauf, von dir zu hören.</p>
 			<br>
 			<br>
-			  <form action="/action_page.php">
+			  <form action="Kontakt_submit.html">
 				<label for="fname">Vorname</label>
 				<input type="text" id="fname" name="vorname" placeholder="Dein Name..">
 
 				<label for="lname">Nachname</label>
 				<input type="text" id="lname" name="nachname" placeholder="Dein Nachname..">
 
-				<label for="subject">Betreff</label>
+				<label for="subject">Nachricht</label>
 				<textarea id="subject" name="betreff" placeholder="Deine Nachricht an uns.." style="height:200px"></textarea>
-
 				<input type="submit" value="Senden">
 			  </form>
 			</div>

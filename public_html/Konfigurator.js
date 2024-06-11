@@ -1,6 +1,27 @@
 document.addEventListener("DOMContentLoaded", function() {
     updateLängenOptionen(); // Die Funktion wird aufgerufen, wenn das DOM geladen wurde
     updateFreistellerBild(); // Setzt das initiale Freistellerbild
+
+    // Event-Listener für die Dropdown-Änderungen
+    document.getElementById('produktTyp').addEventListener('change', function() {
+        updateLängenOptionen();
+        updateFreistellerBild();
+        berechnePreis();
+    });
+
+    document.getElementById('material').addEventListener('change', function() {
+        updateFreistellerBild();
+        berechnePreis();
+    });
+
+    document.getElementById('laenge').addEventListener('change', function() {
+        berechnePreis();
+    });
+
+    document.getElementById('stein').addEventListener('change', function() {
+        updateSteinVorschau();
+        berechnePreis();
+    });
 });
 
 // Funktion zum Aktualisieren der Längenoptionen basierend auf dem ausgewählten Produkttyp
@@ -83,13 +104,12 @@ function zumWarenkorbHinzufügen() {
         stein: stein,
         preis: preis
     };
-	
+    
     // Hinzufügen des Artikels zum Warenkorb
     addToCart(artikel);
-	
-	// Change the Warenkorb icon in the navigation
+    
+    // Change the Warenkorb icon in the navigation
     document.getElementById('warenkorb').src = 'images/Icon_Warenkorb1.png';
-	
 }
 
 // Funktion zum Anzeigen der Benachrichtigung
@@ -109,11 +129,11 @@ function addToCart(artikel) {
     setTimeout(() => {
         notificationBox.style.display = 'none';
     }, 5000);
-	// Funktion zum Ändern des Warenkorb-Icons
-	function updateWarenkorbIcon() {
-    	var warenkorbIcon = document.getElementById('warenkorb');
-    	warenkorbIcon.src = 'images/Icon_Warenkorb1.png';
-	}
+    // Funktion zum Ändern des Warenkorb-Icons
+    function updateWarenkorbIcon() {
+        var warenkorbIcon = document.getElementById('warenkorb');
+        warenkorbIcon.src = 'images/Icon_Warenkorb1.png';
+    }
 }
 
 // Funktion zum Aktualisieren der Edelstein-Vorschau
@@ -160,4 +180,3 @@ function updateFreistellerBild() {
 
     freistellerBild.src = 'images/' + produktTyp + '-' + material + '.png';
 }
-	// Erstellung mit Hilfe von Inhalten aus Tutorium/Vorlesungsmaterialen, https://www.w3schools.com/ und https://chatgpt.com
