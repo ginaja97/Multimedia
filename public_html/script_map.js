@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var aquamarinPopup = document.getElementById('aquamarin-popup');
     
     aquamarin.addEventListener('click', function() {
-        // Toggle visibility
+        
         if (aquamarinPopup.style.display === 'none' || aquamarinPopup.style.display === '') {
             aquamarinPopup.style.display = 'block';
         } else {
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Schließen das Popup, wenn außerhalb davon geklickt wird:
+  
     window.addEventListener('click', function(event) {
         if (event.target !== aquamarin && event.target !== aquamarinPopup) {
             aquamarinPopup.style.display = 'none';
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var smaragdPopup = document.getElementById('smaragd-popup');
     
     smaragd.addEventListener('click', function() {
-        // Toggle visibility
+     
         if (smaragdPopup.style.display === 'none' || smaragdPopup.style.display === '') {
             smaragdPopup.style.display = 'block';
         } else {
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Schließen das Popup, wenn außerhalb davon geklickt wird:
+ 
     window.addEventListener('click', function(event) {
         if (event.target !== smaragd && event.target !== smaragdPopup) {
             smaragdPopup.style.display = 'none';
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var topasPopup = document.getElementById('topas-popup');
     
     topas.addEventListener('click', function() {
-        // Toggle visibility
+   
         if (topasPopup.style.display === 'none' || topasPopup.style.display === '') {
             topasPopup.style.display = 'block';
         } else {
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Schließen das Popup, wenn außerhalb davon geklickt wird:
+   
     window.addEventListener('click', function(event) {
         if (event.target !== topas && event.target !== topasPopup) {
             topasPopup.style.display = 'none';
@@ -252,13 +252,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.querySelector('#Lautsprecher').addEventListener('click',MusikAnAus);	
 
-	const Klingelton = new Audio('Edelsteine Audio.mp3');					// Konstante mit Datentyp Objekt (Audio)
+	const Klingelton = new Audio('Edelsteine Audio.mp3');					
 		function MusikAnAus() {
-			if (! Klingelton.paused) {									// Bedingung um den Status zu überprüfen ...
+			if (! Klingelton.paused) {									
 				Klingelton.pause();
 			}
-			else {														// ... und um ggf. die Wiedergabe fortzusetzen
+			else {														
 				Klingelton.play();
-				Klingelton.loop = true;									// false um Wiederholungen zu deaktivieren
-			}
+				Klingelton.loop = true;									
 		}
+		
+		// Erstellung mit Hilfe von Inhalten aus Tutorium "JS Infobox ohne Button" , und https://www.codecademy.com/ und https://chatgpt.com/
